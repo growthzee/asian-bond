@@ -136,7 +136,7 @@ export default function ProductsPage() {
                     </div>
 
                     <Link href={`/products/${product.id}`}>
-                      <Button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold group">
+                      <Button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold group cursor-pointer">
                         View Details
                         <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                       </Button>

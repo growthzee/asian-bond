@@ -29,7 +29,7 @@ export function CTASection() {
               variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-orange-600 font-semibold px-8 rounded-lg bg-transparent"
             >
-              Call (555) 123-4567
+              Call (+91) 96509-39667
             </Button>
           </div>
         </div>

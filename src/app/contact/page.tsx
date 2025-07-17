@@ -12,9 +12,10 @@ import {
   Clock,
   Send,
   MessageSquare,
-  Building2,
   Globe,
   HeadphonesIcon,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import { Header } from "@/components/sections/header";
 import { Footer } from "@/components/sections/footer";
@@ -30,6 +31,8 @@ export default function ContactPage() {
     message: "",
     inquiryType: "general",
   });
+
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -51,19 +54,21 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91 98765 43210", "+91 87654 32109"],
+      details: ["(+91) 96509-39667", "(+91) 94252-19403"],
       color: "text-blue-600",
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@asianbond.com", "sales@asianbond.com"],
+      details: ["kadambariproducts@gmail.com"],
       color: "text-green-600",
     },
     {
       icon: MapPin,
       title: "Address",
-      details: ["123 Industrial Area", "New Delhi, India - 110001"],
+      details: [
+        "Plot No. 48, Tifra Industrial Area, Bilaspur (C.G) India 495001",
+      ],
       color: "text-red-600",
     },
     {
@@ -74,29 +79,52 @@ export default function ContactPage() {
     },
   ];
 
-  const offices = [
+  const faqs = [
     {
-      city: "New Delhi",
-      type: "Head Office",
-      address: "123 Industrial Area, New Delhi - 110001",
-      phone: "+91 98765 43210",
-      email: "delhi@asianbond.com",
+      question: "What types of construction materials do you manufacture?",
+      answer:
+        "We specialize in manufacturing high-quality wall putty, structural materials, and various construction chemicals. Our flagship product is the 100% waterproof Asian Bond Wall Putty, along with other premium construction materials.",
     },
     {
-      city: "Mumbai",
-      type: "Regional Office",
-      address: "456 Business District, Mumbai - 400001",
-      phone: "+91 87654 32109",
-      email: "mumbai@asianbond.com",
+      question: "Do you provide international shipping?",
+      answer:
+        "Yes, we are exporters and ship our products internationally. We have experience serving customers across multiple countries and can arrange shipping to your location. Contact us for specific shipping details and costs.",
     },
     {
-      city: "Chennai",
-      type: "Regional Office",
-      address: "789 Export Zone, Chennai - 600001",
-      phone: "+91 76543 21098",
-      email: "chennai@asianbond.com",
+      question: "What is the minimum order quantity for bulk purchases?",
+      answer:
+        "Minimum order quantities vary by product. For wall putty, we typically require a minimum order of 100 bags. For other products, please contact our sales team for specific MOQ requirements and bulk pricing.",
+    },
+    {
+      question: "Do you provide technical support and installation guidance?",
+      answer:
+        "We provide comprehensive technical support including product specifications, application guidelines, and installation support. Our technical team is available to assist with any questions about product usage.",
+    },
+    {
+      question: "What quality certifications do your products have?",
+      answer:
+        "Our products meet international quality standards and we hold various certifications including ISO certifications. All our products undergo rigorous quality testing to ensure they meet or exceed industry standards.",
+    },
+    {
+      question: "How can I become a distributor or dealer?",
+      answer:
+        "We welcome partnership opportunities with distributors and dealers. Please contact us through the form above or call our business development team to discuss partnership opportunities, territory availability, and requirements.",
+    },
+    {
+      question: "What is your typical delivery time?",
+      answer:
+        "Delivery times vary based on location and order size. For domestic orders, we typically deliver within 7-15 business days. International orders may take 2-4 weeks depending on the destination and shipping method.",
+    },
+    {
+      question: "Do you offer custom formulations or private labeling?",
+      answer:
+        "Yes, we offer custom formulations and private labeling services for qualified partners. Our R&D team can work with you to develop products that meet your specific requirements. Contact us to discuss your needs.",
     },
   ];
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -130,9 +158,7 @@ export default function ContactPage() {
                 className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-orange-100"
               >
                 <CardContent className="p-8 text-center">
-                  <div
-                    className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
-                  >
+                  <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <info.icon className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -290,15 +316,20 @@ export default function ContactPage() {
 
             {/* Map & Additional Info */}
             <div className="space-y-8">
-              {/* Map Placeholder */}
+              {/* Google Maps Embed */}
               <Card className="border-orange-100">
                 <CardContent className="p-0">
-                  <div className="h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <MapPin className="h-12 w-12 mx-auto mb-2" />
-                      <p>Interactive Map</p>
-                      <p className="text-sm">Google Maps Integration</p>
-                    </div>
+                  <div className="h-80 rounded-lg overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8977!2d82.12733!3d22.070951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280b1c0b1c0b1c%3A0xee7c7c7c7c7c7c7c!2sTifra%20Industrial%20Area%2C%20Bilaspur%2C%20Chhattisgarh%20495001!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Asian Bond Location - Tifra Industrial Area, Bilaspur"
+                    />
                   </div>
                 </CardContent>
               </Card>
@@ -348,54 +379,61 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Office Locations */}
+      {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium mb-4">
-              Our Locations
+              Frequently Asked Questions
             </Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Visit Our Offices
+              Common Questions
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We have offices across India to serve you better
+              Find answers to the most commonly asked questions about our
+              products and services
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {offices.map((office, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-orange-100"
-              >
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-4">
-                    <Building2 className="h-6 w-6 text-orange-600 mr-3" />
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900">
-                        {office.city}
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <Card
+                  key={index}
+                  className="border-orange-100 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <CardContent className="p-0">
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full p-6 text-left flex items-center justify-between hover:bg-orange-50 transition-colors duration-200"
+                    >
+                      <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                        {faq.question}
                       </h3>
-                      <p className="text-orange-600 text-sm">{office.type}</p>
-                    </div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <MapPin className="h-5 w-5 text-gray-400 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-600">{office.address}</p>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Phone className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                      <p className="text-gray-600">{office.phone}</p>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Mail className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                      <p className="text-gray-600">{office.email}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                      {openFAQ === index ? (
+                        <ChevronUp className="h-5 w-5 text-orange-600 flex-shrink-0" />
+                      ) : (
+                        <ChevronDown className="h-5 w-5 text-orange-600 flex-shrink-0" />
+                      )}
+                    </button>
+                    {openFAQ === index && (
+                      <div className="px-6 pb-6">
+                        <p className="text-gray-600 leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-4">Still have questions?</p>
+            <Button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-lg">
+              Contact Our Support Team
+            </Button>
           </div>
         </div>
       </section>
