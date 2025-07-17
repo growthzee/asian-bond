@@ -76,13 +76,13 @@ export default function AboutPage() {
 
   const milestones = [
     {
-      year: "1998",
+      year: "2015",
       title: "Company Founded",
       description:
         "Started as a small manufacturing unit with a vision for quality construction materials.",
     },
     {
-      year: "2005",
+      year: "2016",
       title: "First Export",
       description:
         "Expanded internationally, beginning our journey as a global supplier.",
@@ -100,7 +100,7 @@ export default function AboutPage() {
         "Opened state-of-the-art manufacturing facility with advanced technology.",
     },
     {
-      year: "2023",
+      year: "2019",
       title: "Sustainability Initiative",
       description:
         "Launched eco-friendly product line and sustainable manufacturing practices.",
@@ -149,7 +149,7 @@ export default function AboutPage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                For over 25 years, Asian Bond has been a trusted manufacturer
+                For over 10 years, Asian Bond has been a trusted manufacturer
                 and exporter of premium construction materials, serving clients
                 across 50+ countries with unwavering commitment to quality and
                 innovation.
@@ -163,7 +163,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=600"
+                src="/manufacturing.jpg?height=600&width=600"
                 alt="Asian Bond Manufacturing Facility"
                 width={600}
                 height={600}

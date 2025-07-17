@@ -3,8 +3,14 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { ChevronDown, ImageIcon, Video } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 
 export function Header() {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
   const navigationItems = [
     { name: "Products", href: "/products" },
     { name: "Services", href: "/#services" },
@@ -12,6 +18,58 @@ export function Header() {
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const galleryItems = [
+    { name: "Images", href: "/gallery/images", icon: ImageIcon },
+    { name: "Videos", href: "/gallery/videos", icon: Video },
+  ];
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setIsGalleryOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setIsGalleryOpen(false);
+    }, 150); // Small delay to allow moving to dropdown
+  };
+
+  const handleDropdownMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  };
+
+  const handleDropdownMouseLeave = () => {
+    setIsGalleryOpen(false);
+  };
+
+  const handleGalleryClick = () => {
+    setIsGalleryOpen(!isGalleryOpen);
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsGalleryOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
 
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-orange-100 shadow-sm">
@@ -45,6 +103,45 @@ export function Header() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
+
+            {/* Gallery Dropdown */}
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={handleGalleryClick}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                className="text-gray-700 hover:text-orange-600 font-medium transition-colors duration-200 relative group flex items-center"
+              >
+                Gallery
+                <ChevronDown
+                  className={`ml-1 h-4 w-4 transition-transform duration-200 ${
+                    isGalleryOpen ? "rotate-180" : ""
+                  }`}
+                />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
+              </button>
+
+              {/* Dropdown Menu */}
+              {isGalleryOpen && (
+                <div
+                  className="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-xl border border-orange-100 py-2 z-50 animate-in fade-in-0 zoom-in-95 duration-200"
+                  onMouseEnter={handleDropdownMouseEnter}
+                  onMouseLeave={handleDropdownMouseLeave}
+                >
+                  {galleryItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      onClick={() => setIsGalleryOpen(false)}
+                      className="flex items-center px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-all duration-200 group"
+                    >
+                      <item.icon className="h-4 w-4 mr-3 group-hover:scale-110 transition-transform duration-200" />
+                      <span className="font-medium">{item.name}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* CTA Button */}
