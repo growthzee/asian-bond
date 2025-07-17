@@ -69,7 +69,7 @@ export function SustainabilitySection() {
 
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/construction-men.jpg?height=600&width=600"
               alt="Sustainable Construction"
               width={600}
               height={600}

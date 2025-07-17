@@ -1,5 +1,6 @@
-import { Building2, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,31 +9,43 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center rounded-lg">
-                <Building2 className="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold">BuildMaster</h3>
-                <p className="text-orange-400 text-sm">Premium Materials</p>
-              </div>
+              <Link
+                href="/"
+                className="flex items-center space-x-4 hover:opacity-80 transition-opacity"
+              >
+                <div className="w-12 h-12 flex items-center justify-center rounded-lg shadow-lg">
+                  <Image src="/logo.png" alt="Logo" height={160} width={160} />
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold text-white whitespace-nowrap">
+                    ASIAN BOND
+                  </h1>
+                  <p className="text-xs text-orange-600 font-medium whitespace-nowrap">
+                    MANUFACTURER & EXPORTER
+                  </p>
+                </div>
+              </Link>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               Your trusted partner for premium construction materials and
-              exceptional service since 1995.
+              exceptional service since 2015.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-orange-500" />
-                <span className="text-gray-300">(555) 123-4567</span>
+                <span className="text-gray-300"> (+91) 96509-39667 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-orange-500" />
-                <span className="text-gray-300">info@buildmaster.com</span>
+                <span className="text-gray-300">
+                  kadambariproducts@gmail.com
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-orange-500" />
                 <span className="text-gray-300">
-                  1234 Construction Ave, Builder City
+                  M/S Kadambari Products, Plot No. 48, Tifra Industrial Area,
+                  Bilaspur (C.G) India 495001
                 </span>
               </div>
             </div>
@@ -42,14 +55,14 @@ export function Footer() {
             <h4 className="font-bold mb-6 text-white">Products</h4>
             <ul className="space-y-3">
               {[
-                "Concrete & Cement",
+                "Wall Putty",
                 "Structural Steel",
                 "Aggregates",
-                "Roofing Materials",
+                "Construction Materials",
               ].map((item) => (
                 <li key={item}>
                   <Link
-                    href="#"
+                    href="/products"
                     className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
                   >
                     {item}
@@ -62,13 +75,18 @@ export function Footer() {
           <div>
             <h4 className="font-bold mb-6 text-white">Company</h4>
             <ul className="space-y-3">
-              {["About Us", "Services", "Projects", "Contact"].map((item) => (
-                <li key={item}>
+              {[
+                { name: "About Us", href: "/about" },
+                { name: "Services", href: "/#services" },
+                { name: "Projects", href: "/#projects" },
+                { name: "Contact", href: "/contact" },
+              ].map((item) => (
+                <li key={item.name}>
                   <Link
-                    href="#"
+                    href={item.href}
                     className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -78,7 +96,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} BuildMaster. All rights reserved.
+            © {new Date().getFullYear()} Asian Bond. All rights reserved.
           </p>
         </div>
       </div>
