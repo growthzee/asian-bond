@@ -109,20 +109,20 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Rajesh Kumar",
+      name: "xyz",
       role: "Founder & CEO",
       image: "/placeholder.svg?height=300&width=300",
       description:
         "25+ years of experience in construction materials industry.",
     },
     {
-      name: "Priya Sharma",
+      name: "Abc",
       role: "Head of Quality",
       image: "/placeholder.svg?height=300&width=300",
       description: "Expert in quality control and product development.",
     },
     {
-      name: "Amit Patel",
+      name: "efg",
       role: "Export Manager",
       image: "/placeholder.svg?height=300&width=300",
       description:
