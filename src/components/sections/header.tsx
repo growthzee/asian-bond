@@ -12,12 +12,12 @@ export function Header() {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const navigationItems = [
-    { name: "Products", href: "/products" },
-    { name: "Services", href: "/#services" },
-    { name: "Projects", href: "/#projects" },
-    { name: "Blog", href: "/blogs" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "ABOUT US", href: "/about" },
+    { name: "CONCRETE HARDENER", href: "/concrete-hardner" },
+    { name: "OUR PRODUCTS", href: "/products" },
+    { name: "REVIEWS", href: "/#reviews" },
+    { name: "LEARNING", href: "/blogs" },
+    { name: "CONTACT US", href: "/contact" },
   ];
 
   const galleryItems = [
@@ -113,7 +113,7 @@ export function Header() {
                 onMouseLeave={handleMouseLeave}
                 className="text-gray-700 hover:text-orange-600 font-medium transition-colors duration-200 relative group flex items-center"
               >
-                Gallery
+                GALLERY
                 <ChevronDown
                   className={`ml-1 h-4 w-4 transition-transform duration-200 ${
                     isGalleryOpen ? "rotate-180" : ""

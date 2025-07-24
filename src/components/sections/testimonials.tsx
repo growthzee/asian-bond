@@ -95,7 +95,7 @@ export function TestimonialsSection() {
   const handleMouseLeave = () => setIsAutoPlaying(true);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="reviews">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <Badge className="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium mb-4">
