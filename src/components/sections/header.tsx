@@ -13,7 +13,7 @@ export function Header() {
 
   const navigationItems = [
     { name: "ABOUT US", href: "/about" },
-    { name: "CONCRETE HARDENER", href: "/concrete-hardner" },
+    { name: "CONCRETE HARDENER", href: "/concrete-hardener" },
     { name: "OUR PRODUCTS", href: "/products" },
     { name: "REVIEWS", href: "/#reviews" },
     { name: "LEARNING", href: "/blogs" },
