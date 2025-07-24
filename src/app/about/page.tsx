@@ -74,61 +74,38 @@ export default function AboutPage() {
     },
   ];
 
-  const milestones = [
-    {
-      year: "2015",
-      title: "Company Founded",
-      description:
-        "Started as a small manufacturing unit with a vision for quality construction materials.",
-    },
-    {
-      year: "2016",
-      title: "First Export",
-      description:
-        "Expanded internationally, beginning our journey as a global supplier.",
-    },
-    {
-      year: "2012",
-      title: "ISO Certification",
-      description:
-        "Achieved ISO 9001:2015 certification for quality management systems.",
-    },
-    {
-      year: "2018",
-      title: "Modern Facility",
-      description:
-        "Opened state-of-the-art manufacturing facility with advanced technology.",
-    },
-    {
-      year: "2019",
-      title: "Sustainability Initiative",
-      description:
-        "Launched eco-friendly product line and sustainable manufacturing practices.",
-    },
-  ];
-
-  const team = [
-    {
-      name: "xyz",
-      role: "Founder & CEO",
-      image: "/placeholder.svg?height=300&width=300",
-      description:
-        "25+ years of experience in construction materials industry.",
-    },
-    {
-      name: "Abc",
-      role: "Head of Quality",
-      image: "/placeholder.svg?height=300&width=300",
-      description: "Expert in quality control and product development.",
-    },
-    {
-      name: "efg",
-      role: "Export Manager",
-      image: "/placeholder.svg?height=300&width=300",
-      description:
-        "Leading our international expansion and client relationships.",
-    },
-  ];
+  // const milestones = [
+  //   {
+  //     year: "1998",
+  //     title: "Company Founded",
+  //     description:
+  //       "Started as a small manufacturing unit with a vision for quality construction materials.",
+  //   },
+  //   {
+  //     year: "2005",
+  //     title: "First Export",
+  //     description:
+  //       "Expanded internationally, beginning our journey as a global supplier.",
+  //   },
+  //   {
+  //     year: "2012",
+  //     title: "ISO Certification",
+  //     description:
+  //       "Achieved ISO 9001:2015 certification for quality management systems.",
+  //   },
+  //   {
+  //     year: "2018",
+  //     title: "Modern Facility",
+  //     description:
+  //       "Opened state-of-the-art manufacturing facility with advanced technology.",
+  //   },
+  //   {
+  //     year: "2023",
+  //     title: "Sustainability Initiative",
+  //     description:
+  //       "Launched eco-friendly product line and sustainable manufacturing practices.",
+  //   },
+  // ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -145,14 +122,16 @@ export default function AboutPage() {
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Building Trust Through
                 <span className="text-orange-600 block">
-                  Quality & Innovation
+                  Building Strong Foundations, Enhancing Durability
                 </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                For over 10 years, Asian Bond has been a trusted manufacturer
-                and exporter of premium construction materials, serving clients
-                across 50+ countries with unwavering commitment to quality and
-                innovation.
+                ASIAN BOND is a leading provider of innovative construction
+                chemical solutions, dedicated to enhancing the strength,
+                durability, and sustainability of buildings and infrastructure.
+                With a focus on delivering high-quality products and exceptional
+                customer service, we aim to be the preferred partner for
+                construction professionals worldwide.
               </p>
               <Link href="/contact">
                 <Button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-lg">
@@ -163,7 +142,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/manufacturing.jpg?height=600&width=600"
+                src="/placeholder.svg?height=600&width=600"
                 alt="Asian Bond Manufacturing Facility"
                 width={600}
                 height={600}
@@ -175,6 +154,72 @@ export default function AboutPage() {
                   <div className="text-sm text-gray-600">Certified</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Description Section */}
+      <section className="py-16 bg-white border-y border-orange-100">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Our Commitment
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              At ASIAN BOND, we are committed to excellence in every aspect of
+              our business. From research and development to manufacturing and
+              customer service, we strive to exceed expectations and deliver
+              exceptional value to our clients.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Investment in R&D
+              </h3>
+              <p className="text-gray-600">
+                We invest heavily in research and development to stay at the
+                forefront of construction chemical technology. Our team of
+                experienced scientists and engineers is constantly working to
+                develop new and innovative solutions that meet the evolving
+                needs of the construction industry.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Strategic Partnerships
+              </h3>
+              <p className="text-gray-600">
+                We have established strategic partnerships with leading
+                companies and organizations in the construction industry. These
+                partnerships allow us to leverage the latest technologies and
+                expertise to deliver superior products and services to our
+                clients.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Sustainability Initiatives
+              </h3>
+              <p className="text-gray-600">
+                We are committed to sustainability and environmental
+                responsibility. Our products are designed to minimize
+                environmental impact and promote sustainable construction
+                practices. We also work closely with our suppliers and customers
+                to reduce waste and conserve resources.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Global Reach
+              </h3>
+              <p className="text-gray-600">
+                With a presence in over 50 countries, we have the global reach
+                to serve clients anywhere in the world. Our experienced team of
+                sales and technical support professionals is always available to
+                provide expert advice and assistance.
+              </p>
             </div>
           </div>
         </div>
@@ -199,7 +244,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* What We Do Section */}
       <section className="py-20 bg-gradient-to-br from-orange-50 to-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
@@ -208,19 +253,39 @@ export default function AboutPage() {
                 <div className="flex items-center mb-6">
                   <Target className="h-8 w-8 text-orange-600 mr-3" />
                   <h2 className="text-3xl font-bold text-gray-900">
-                    Our Mission
+                    What We Do
                   </h2>
                 </div>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  To provide world-class construction materials that exceed
-                  customer expectations while maintaining the highest standards
-                  of quality, safety, and environmental responsibility. We
-                  strive to be the preferred partner for construction
-                  professionals worldwide.
+                  We offer a comprehensive range of construction chemical
+                  solutions, including:
+                  <ul className="list-disc pl-5 mt-4">
+                    <li>
+                      Concrete Admixtures: Enhance the properties of concrete,
+                      such as strength, workability, and durability.
+                    </li>
+                    <li>
+                      Waterproofing Solutions: Protect buildings and
+                      infrastructure from water damage.
+                    </li>
+                    <li>
+                      Repair and Rehabilitation Products: Restore and strengthen
+                      damaged structures.
+                    </li>
+                    <li>
+                      Flooring Solutions: Provide durable and aesthetically
+                      pleasing flooring options.
+                    </li>
+                    <li>
+                      Adhesives and Sealants: Bond and seal construction
+                      materials for enhanced performance.
+                    </li>
+                  </ul>
                 </p>
               </CardContent>
             </Card>
 
+            {/* Vision Section */}
             <Card className="border-orange-100 shadow-lg">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
@@ -230,10 +295,11 @@ export default function AboutPage() {
                   </h2>
                 </div>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  To be the global leader in innovative construction materials,
-                  setting industry benchmarks for quality and sustainability. We
-                  envision a future where our products contribute to building
-                  stronger, safer, and more sustainable communities worldwide.
+                  To be the leading provider of innovative construction chemical
+                  solutions, recognized for our commitment to quality, customer
+                  service, and sustainability. We envision a future where our
+                  products contribute to building stronger, more durable, and
+                  more sustainable infrastructure worldwide.
                 </p>
               </CardContent>
             </Card>
@@ -280,8 +346,79 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Company Timeline */}
+      {/* Why Choose Us Section */}
       <section className="py-20 bg-gradient-to-br from-orange-50 to-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium mb-4">
+              Why Choose Us
+            </Badge>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              The ASIAN BOND Advantage
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              We are committed to providing our customers with the best possible
+              products and services.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="border-orange-100 hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <Shield className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-900 mb-2">
+                  Quality Assurance
+                </h3>
+                <p className="text-gray-600">
+                  Our products undergo rigorous testing to ensure they meet the
+                  highest standards of quality and performance.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-orange-100 hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <Globe className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-900 mb-2">
+                  Technical Support
+                </h3>
+                <p className="text-gray-600">
+                  Our team of experienced technical experts is available to
+                  provide guidance and support to our customers.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-orange-100 hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <Heart className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-900 mb-2">Sustainability</h3>
+                <p className="text-gray-600">
+                  We are committed to sustainability and environmental
+                  responsibility in all aspects of our business.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-orange-100 hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <Users className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-900 mb-2">
+                  Customer Satisfaction
+                </h3>
+                <p className="text-gray-600">
+                  We are dedicated to providing our customers with the best
+                  possible experience, from product selection to after-sales
+                  support.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Timeline */}
+      {/* <section className="py-20 bg-gradient-to-br from-orange-50 to-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium mb-4">
@@ -331,52 +468,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Leadership Team */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Badge className="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium mb-4">
-              Leadership Team
-            </Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Leaders
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Experienced professionals driving our vision forward
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <Card
-                key={index}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-orange-100"
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={member.image || "/placeholder.svg"}
-                    alt={member.name}
-                    width={300}
-                    height={300}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                <CardContent className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-orange-600 font-medium mb-3">
-                    {member.role}
-                  </p>
-                  <p className="text-gray-600">{member.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      </section> */}
 
       {/* Certifications */}
       <section className="py-20 bg-gradient-to-br from-orange-50 to-white">
