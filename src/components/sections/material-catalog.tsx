@@ -87,12 +87,13 @@ export function MaterialCatalogSection() {
                       </div>
                       <div className={`${index % 2 === 1 ? "md:order-1" : ""}`}>
                         <Link href={`/products/${product.id}`}>
-                          <div className="aspect-[4/3] relative overflow-hidden">
+                          <div className="relative overflow-hidden rounded-lg bg-white shadow-md group-hover:shadow-lg transition-shadow duration-300">
                             <Image
                               src={product.image || "/placeholder.svg"}
                               alt={product.title}
-                              fill
-                              className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                              width={400}
+                              height={300}
+                              className="w-full h-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 p-4"
                             />
                           </div>
                         </Link>
