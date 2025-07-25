@@ -142,7 +142,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=600"
+                src="/asian-bond-client.jpeg?height=600&width=600"
                 alt="Asian Bond Manufacturing Facility"
                 width={600}
                 height={600}

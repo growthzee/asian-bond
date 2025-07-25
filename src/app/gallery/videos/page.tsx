@@ -31,7 +31,7 @@ export default function VideosGalleryPage() {
       duration: "3:45",
       description:
         "Complete overview of our advanced wall putty manufacturing process",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://youtu.be/uhg4WEoh9vw",
     },
     {
       id: 2,
