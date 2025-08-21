@@ -45,7 +45,7 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-orange-500" />
                 <span className="text-gray-300">
                   M/S Kadambari Products, Plot No. 48, Tifra Industrial Area,
-                  Bilaspur (C.G) India 495001
+                  Bilaspur (C.G) India 495223
                 </span>
               </div>
             </div>

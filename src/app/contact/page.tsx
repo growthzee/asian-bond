@@ -67,7 +67,7 @@ export default function ContactPage() {
       icon: MapPin,
       title: "Address",
       details: [
-        "Plot No. 48, Tifra Industrial Area, Bilaspur (C.G) India 495001",
+        "Plot No. 48, Tifra Industrial Area, Bilaspur (C.G) India 495223",
       ],
       color: "text-red-600",
     },
