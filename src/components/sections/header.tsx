@@ -98,7 +98,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-orange-600 font-medium transition-colors duration-200 relative group"
+                className="text-sm text-gray-700 hover:text-orange-600 font-medium transition-colors duration-200 relative group"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
@@ -111,7 +111,7 @@ export function Header() {
                 onClick={handleGalleryClick}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className="text-gray-700 hover:text-orange-600 font-medium transition-colors duration-200 relative group flex items-center"
+                className="text-sm text-gray-700 hover:text-orange-600 font-medium transition-colors duration-200 relative group flex items-center"
               >
                 GALLERY
                 <ChevronDown
@@ -134,7 +134,7 @@ export function Header() {
                       key={item.name}
                       href={item.href}
                       onClick={() => setIsGalleryOpen(false)}
-                      className="flex items-center px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-all duration-200 group"
+                      className="flex items-center px-4 py-3 text-sm text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-all duration-200 group"
                     >
                       <item.icon className="h-4 w-4 mr-3 group-hover:scale-110 transition-transform duration-200" />
                       <span className="font-medium">{item.name}</span>
