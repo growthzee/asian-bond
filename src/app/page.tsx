@@ -14,6 +14,7 @@ import { NewsletterSection } from "@/components/sections/newsletter";
 import { CTASection } from "@/components/sections/cta";
 import { Footer } from "@/components/sections/footer";
 import { FeaturedProjectsSection } from "@/components/sections/featured-projects";
+import { IndiaMapSection } from "@/components/sections/map-section";
 
 export default function ConstructionLanding() {
   const [scrollY, setScrollY] = useState(0);
@@ -30,7 +31,8 @@ export default function ConstructionLanding() {
     <div className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      <CompanyStatsSection />
+      {/* <CompanyStatsSection /> */}
+      <IndiaMapSection />
       <MaterialCatalogSection />
       <FeaturedProjectsSection />
       <ProcessSection />
