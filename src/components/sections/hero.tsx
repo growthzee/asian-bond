@@ -7,47 +7,35 @@ import {
   CheckCircle,
   ChevronLeft,
   ChevronRight,
-  Play,
 } from "lucide-react";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
   const slides = [
     {
-      type: "image",
-      src: "/factory.jpg",
-      alt: "Asian Bond Manufacturing Facility",
-      title: "State-of-the-art Manufacturing",
-      description: "Modern production facility with advanced technology",
-    },
-    {
-      type: "image",
-      src: "/factory2.jpg?height=400&width=500&text=Wall+Putty+Production",
-      alt: "Wall Putty Production Line",
-      title: "Premium Wall Putty Production",
-      description: "100% waterproof wall putty manufacturing process",
-    },
-    {
-      type: "image",
-      src: "/factory3.jpg?height=400&width=500&text=Quality+Control+Lab",
-      alt: "Quality Control Laboratory",
-      title: "Advanced Quality Testing",
-      description: "Rigorous quality control and testing procedures",
+      type: "video",
+      title: "Manufacturing Process",
+      description: "See how our premium products are made",
+      videoUrl:
+        "https://www.youtube.com/embed/YrZgVH8DKMM?autoplay=1&loop=1&playlist=YrZgVH8DKMM&mute=1&controls=0",
     },
     {
       type: "video",
-      thumbnail:
-        "/factory4.jpg?height=400&width=500&text=Manufacturing+Process+Video",
-      title: "Manufacturing Process",
-      description: "See how our premium products are made",
-      duration: "3:45",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      title: "Quality Control Process",
+      description: "Our rigorous testing procedures",
+      videoUrl:
+        "https://www.youtube.com/embed/0IIaa8MBQsA?autoplay=1&loop=1&playlist=0IIaa8MBQsA&mute=1&controls=0",
+    },
+    {
+      type: "video",
+      title: "Product Application",
+      description: "How to use our construction chemicals",
+      videoUrl:
+        "https://www.youtube.com/embed/VS6l_n1UOZM?autoplay=1&loop=1&playlist=VS6l_n1UOZM&mute=1&controls=0",
     },
   ];
 
@@ -82,14 +70,6 @@ export function HeroSection() {
 
   const handleMouseEnter = () => setIsAutoPlaying(false);
   const handleMouseLeave = () => setIsAutoPlaying(true);
-
-  const openVideoModal = (videoUrl: string) => {
-    setSelectedVideo(videoUrl);
-  };
-
-  const closeVideoModal = () => {
-    setSelectedVideo(null);
-  };
 
   const currentSlideData = slides[currentSlide];
 
@@ -149,9 +129,12 @@ export function HeroSection() {
               {/* Quick Stats in Hero */}
               <div className="grid grid-cols-3 gap-4 pt-6">
                 {[
-                  { number: "10+", label: "Years Experience" },
-                  { number: "10K+", label: "Projects Completed" },
-                  { number: "500+", label: "Happy Clients" },
+                  { number: "40+", label: "Years Experience" },
+                  {
+                    number: "10K+",
+                    label: "Manufacturers in Cement Industries",
+                  },
+                  { number: "1000+", label: "Happy Clients" },
                 ].map((stat, index) => (
                   <div
                     key={index}
@@ -184,60 +167,25 @@ export function HeroSection() {
 
                 {/* Main Slide Display */}
                 <div className="relative rounded-2xl shadow-2xl overflow-hidden bg-white">
-                  {currentSlideData.type === "image" ? (
-                    <div className="relative">
-                      <Image
-                        src={currentSlideData.src || "/placeholder.svg"}
-                        alt={currentSlideData.alt || ""}
-                        width={500}
-                        height={400}
-                        className="w-full h-80 object-cover transition-all duration-500"
-                      />
-                      {/* Image Overlay Info */}
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                        <h3 className="text-white font-bold text-lg mb-1">
-                          {currentSlideData.title}
-                        </h3>
-                        <p className="text-white/90 text-sm">
-                          {currentSlideData.description}
-                        </p>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="relative">
-                      <div
-                        className="w-full h-80 bg-cover bg-center relative cursor-pointer group"
-                        style={{
-                          backgroundImage: `url(${currentSlideData.thumbnail})`,
-                        }}
-                        onClick={() =>
-                          openVideoModal(currentSlideData.videoUrl || "")
-                        }
-                      >
-                        {/* Video Play Overlay - ONLY for video slides */}
-                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-all duration-300">
-                          <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                            <Play className="h-8 w-8 text-orange-600 ml-1" />
-                          </div>
-                        </div>
+                  <div className="relative">
+                    <iframe
+                      src={currentSlideData.videoUrl}
+                      title={currentSlideData.title}
+                      className="w-full h-80"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
 
-                        {/* Duration Badge */}
-                        <div className="absolute top-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-sm">
-                          {currentSlideData.duration}
-                        </div>
-                      </div>
-
-                      {/* Video Info Overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                        <h3 className="text-white font-bold text-lg mb-1">
-                          {currentSlideData.title}
-                        </h3>
-                        <p className="text-white/90 text-sm">
-                          {currentSlideData.description}
-                        </p>
-                      </div>
+                    {/* Video Info Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 pointer-events-none">
+                      <h3 className="text-white font-bold text-lg mb-1">
+                        {currentSlideData.title}
+                      </h3>
+                      <p className="text-white/90 text-sm">
+                        {currentSlideData.description}
+                      </p>
                     </div>
-                  )}
+                  </div>
 
                   {/* Navigation Arrows */}
                   <button
@@ -289,27 +237,6 @@ export function HeroSection() {
           </div>
         </div>
       </section>
-
-      {/* Video Modal */}
-      {selectedVideo && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-          <div className="relative w-full max-w-4xl aspect-video">
-            <button
-              onClick={closeVideoModal}
-              className="absolute -top-12 right-0 text-white hover:text-orange-400 transition-colors text-2xl font-bold"
-            >
-              ×
-            </button>
-            <iframe
-              src={selectedVideo}
-              title="Video Player"
-              className="w-full h-full rounded-lg"
-              allowFullScreen
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            />
-          </div>
-        </div>
-      )}
     </>
   );
 }
