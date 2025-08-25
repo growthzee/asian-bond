@@ -55,9 +55,9 @@ export const products: Product[] = [
       "Impact Value": "< 45%",
       "Flakiness Index": "< 35%",
     },
-    image: "/concrete.jpg",
+    image: "/concrete-hardner.jpg",
     gallery: [
-      "/concrete.jpg",
+      "/concrete-hardner.jpg",
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=400&width=600",
