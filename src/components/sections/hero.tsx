@@ -91,7 +91,7 @@ export function HeroSection() {
             >
               <div className="space-y-4">
                 <Badge className="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium">
-                  🏗️ Trusted Since 2015
+                  🏗️ Trusted Since 1985
                 </Badge>
 
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
