@@ -37,12 +37,12 @@ export default function ConstructionLanding() {
       <MaterialCatalogSection />
       <VideoTestimonialsSection />
       {/* <FeaturedProjectsSection /> */}
-      <ProcessSection />
-      <ToolsResourcesSection />
-      <SustainabilitySection />
-      <ServicesSection />
+      {/* <ProcessSection /> */}
+      {/* <ToolsResourcesSection /> */}
+      {/* <SustainabilitySection /> */}
+      {/* <ServicesSection /> */}
       <TestimonialsSection />
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
       <CTASection />
       <Footer />
     </div>

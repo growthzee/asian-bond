@@ -12,12 +12,12 @@ export interface Blog {
 export const blogs: Blog[] = [
   {
     id: "innovative-materials-future-construction",
-    title: "Innovative Materials Shaping the Future of Construction",
+    title: "What is Concrete Hardener and How Does It Work?",
     author: "Asian Bond Team",
     date: "August 28, 2025",
     category: "Innovation",
     summary:
-      "Explore the cutting-edge materials revolutionizing the construction industry, from self-healing concrete to advanced composites. Discover how these innovations are leading to more sustainable and durable structures.",
+      "Concrete hardener ek aisa chemical substance hai jo concrete ki surface par lagaya jata hai taaki uski strength, durability, aur hardness ko badhaya ja sake. Concrete ki surface naturally porous hoti hai, matlab usme chhote chhote holes (pores) hote hain jinke through moisture, dust, oils, aur dusre chemicals andar ja sakte hain. Yeh pores concrete ki quality ko kamzor kar dete hain.",
     content: `
       <article class="prose max-w-none">
 
