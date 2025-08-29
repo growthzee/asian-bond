@@ -309,7 +309,7 @@ export default function ConcreteHardenerPage() {
       </section>
 
       {/* Product Types */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium mb-4">
@@ -412,10 +412,10 @@ export default function ConcreteHardenerPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Applications Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 to-white">
+      {/* <section className="py-20 bg-gradient-to-br from-orange-50 to-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium mb-4">
@@ -488,7 +488,7 @@ export default function ConcreteHardenerPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-orange-500 to-orange-600">

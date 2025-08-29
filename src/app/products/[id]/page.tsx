@@ -8,6 +8,7 @@ import {
   ArrowLeft,
   Check,
   Download,
+  DownloadIcon,
   Mail,
   Phone,
   Share2,
@@ -102,7 +103,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   Email Inquiry
                 </Button>
                 <Button variant="outline">
-                  <Share2 className="h-4 w-4" />
+                  <DownloadIcon className="h-4 w-4" />
+                  Download PDF
                 </Button>
               </div>
             </div>
@@ -111,10 +113,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </section>
 
       {/* Product Details Tabs */}
-      <section className="py-12 bg-gray-50">
+      {/* <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8">
-            {/* Features */}
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -131,7 +132,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </CardContent>
             </Card>
 
-            {/* Applications */}
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -148,7 +148,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </CardContent>
             </Card>
 
-            {/* Technical Specifications */}
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -177,7 +176,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (
