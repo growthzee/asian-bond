@@ -9,6 +9,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -112,10 +113,13 @@ export function HeroSection() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
+                  asChild
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 group"
                 >
-                  Explore Products
-                  <ArrowUpRight className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  <Link href="/products">
+                    Explore Products
+                    <ArrowUpRight className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </Link>
                 </Button>
                 <Button
                   size="lg"
