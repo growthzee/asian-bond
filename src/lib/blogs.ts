@@ -1877,7 +1877,7 @@ export const blogs: Blog[] = [
     title:
       "Common Errors While Mixing Construction Chemicals – How to Avoid Them",
     author: "Asian Bond Team",
-    date: "19th September, 2025",
+    date: "20th September, 2025",
     category: "Innovation",
     summary:
       " Building chemicals have transformed modern construction, delivering durability, strength, and long-term quality.",
