@@ -13,10 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Asian Bond – Innovative Construction Chemicals for Stronger Structures",
+  title: "Best Concrete Hardener in India | Asian Bond Manufacturer",
   description:
-    "Explore Asian Bond’s high-performance range of construction chemicals—including waterproof wall putty, concrete floor hardeners, and curing compounds. ISO-certified quality trusted across India since 1985.",
+    "Buy ISO certified concrete hardener for paver blocks, bricks, and factory floors from Asian Bond — India’s trusted concrete hardener manufacturer.",
   verification: {
     google: "nhWlRM6-aNNXHth6wKPIdIXWMe68bLdoMLg10dawdRc",
   },
