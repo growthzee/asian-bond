@@ -7949,6 +7949,171 @@ export const blogs: Blog[] = [
     image:
       "https://res.cloudinary.com/doy1iucnw/image/upload/v1763211134/Artboard_4_3_sfdfaa.jpg",
   },
+  {
+    id: "can-you-apply-concrete-hardener-on-old-floors",
+    title:
+      "Can You Apply Concrete Hardener on Old Floors? (A Guide to Floor Restoration)",
+    author: "Asian Bond Team",
+    date: "12th November, 2025",
+    category: "Innovation",
+    summary:
+      "Concrete floors are common in factories, shops, warehouses, and even homes thanks to their strength and affordability.",
+    content: `
+<article class="prose max-w-none mx-auto">
+
+  <h2 class="text-2xl font-bold text-gray-900 mb-4">
+    Can You Apply Concrete Hardener on Old Floors? (A Guide to Floor Restoration)
+  </h2>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    Concrete floors are common in factories, shops, warehouses, and even homes thanks to their strength and affordability. But over time, 
+    they wear down—cracking, dusting, or eroding due to movement, spills, and temperature changes. Naturally, the big question appears:
+    <strong>Can concrete hardener be applied on old floors?</strong>
+  </p>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    This guide simplifies everything—how floor hardeners work, which types suit restoration, and why brands like 
+    <strong>Asianbond</strong> remain among India’s top choices for concrete strengthening.
+  </p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">What is a Concrete Hardener?</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    Concrete hardeners (also called densifiers) are chemical treatments that strengthen the surface of concrete. They penetrate the slab 
+    and react with free lime to form a harder, denser surface structure. This reduces dusting, increases abrasion resistance, and extends 
+    floor life dramatically. Hardeners come in three primary forms:
+  </p>
+
+  <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-6">
+    <li>Dry shake powders</li>
+    <li>Liquid concrete hardeners</li>
+    <li>Chemical admixtures added during mixing</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">Can Concrete Hardener Be Applied on Old Floors?</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    <strong>Yes.</strong> While dry shake hardeners are only suitable for freshly poured concrete, 
+    <strong>liquid concrete hardeners</strong> work exceptionally well on old, worn-out floors. These liquids seep deep into the surface, 
+    close pores, and strengthen the slab without requiring replacement.
+  </p>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    With proper surface preparation, liquid concrete hardener restores old factory floors, shops, garages, homes, and storage areas 
+    efficiently and economically.
+  </p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">Types of Concrete Hardener for Floor Restoration</h3>
+
+  <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-6">
+    <li><strong>Dry shake hardener:</strong> Applied on fresh concrete; not ideal for old floors.</li>
+    <li><strong>Liquid concrete hardener:</strong> Sodium silicate or reactive chemical formulations applied by roller or sprayer. 
+        Perfect for old slabs and paver or brick areas.</li>
+    <li><strong>Chemical admixture hardeners:</strong> Added into mixes for new construction; some Indian brands offer modified versions for specific uses.</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">Asianbond: The Best Concrete Hardener in India</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    <strong>Asianbond</strong> is widely recognized as one of India’s top concrete hardener manufacturers. Their ISO-certified products 
+    serve flooring, masonry, paver block manufacturing, and restoration with exceptional results. They offer:
+  </p>
+
+  <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-6">
+    <li>Liquid hardeners for brickwork and resurfacing</li>
+    <li>Dry shake hardeners for industrial flooring</li>
+    <li>Chemical admixtures for stronger mixes</li>
+    <li>Technical assistance and reliable distribution across India</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">Benefits of Applying Concrete Hardener on Old Floors</h3>
+
+  <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-6">
+    <li>Restores and strengthens worn-out surface layers</li>
+    <li>Improves abrasion resistance for high-traffic areas</li>
+    <li>Reduces dusting and surface cracking</li>
+    <li>Cost-effective alternative to replacing floors</li>
+    <li>Creates a denser finish for improved slip resistance</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">How to Apply Concrete Hardener on Old Floors</h3>
+
+  <ol class="list-decimal pl-6 text-gray-700 space-y-1 mb-6">
+    <li><strong>Surface Cleaning:</strong> Remove grease, oils, dust, and loose particles using industrial cleaners.</li>
+    <li><strong>Repair Cracks:</strong> Patch visible cracks or damaged sections before hardener application.</li>
+    <li><strong>Choose Liquid Hardener:</strong> Ideal for old surfaces; penetrates easily.</li>
+    <li><strong>Apply Evenly:</strong> Use a sprayer or roller; keep the surface wet for 30 minutes to allow deep penetration.</li>
+    <li><strong>Cure Properly:</strong> Let the surface react for 24–48 hours; keep slightly damp for proper bonding.</li>
+    <li><strong>Optional Finishing:</strong> Buffing or sealing can increase shine and protection.</li>
+  </ol>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">Concrete Surface Hardener Price and Bulk Buying</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    Prices vary by brand, quantity, and chemical type. Asianbond provides budget-friendly rates with bulk order options—ideal for factories, 
+    commercial spaces, and large facilities. Buying in bulk reduces cost per square foot and ensures consistent supply.
+  </p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">Concrete Hardener for Paver Blocks and Bricks</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    Liquid hardeners work excellently on paver blocks and bricks by sealing pores and preventing weather damage. Asianbond’s formulation 
+    enhances surface bonding, reduces dusting, and improves lifespan even under harsh outdoor conditions.
+  </p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">Floor Hardener Chemicals for Factory Use</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    Industrial floors need chemical-resistant, impact-resistant surfaces. Asianbond’s non-metallic floor hardener formulas withstand:
+  </p>
+
+  <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-6">
+    <li>Heavy machinery movement</li>
+    <li>Oil and chemical spills</li>
+    <li>High foot and equipment traffic</li>
+    <li>High-abrasion environments</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">Finding a Concrete Hardener Supplier Near Me</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    Due to rising demand, many regional suppliers stock Asianbond concrete hardeners. Searching online helps locate nearby distributors 
+    offering fast delivery and expert guidance.
+  </p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">Choosing the Best Concrete Hardener</h3>
+
+  <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-6">
+    <li>Choose ISO-certified brands like Asianbond</li>
+    <li>Match product type to surface condition (new vs old)</li>
+    <li>Select based on environmental exposure</li>
+    <li>Ensure ease of application</li>
+    <li>Opt for reputable admixture manufacturers in India</li>
+  </ul>
+
+  <p class="text-gray-700 leading-relaxed mb-6">
+    Asianbond consistently ranks among India’s most trusted concrete hardener brands, offering durable performance, reliable support, 
+    and cost-effective solutions for both old and new flooring.
+  </p>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  `,
+    image:
+      "https://res.cloudinary.com/doy1iucnw/image/upload/v1763384410/4_uploaded_z45dqm.jpg",
+  },
 ];
 
 export function getBlogById(id: string): Blog | undefined {
