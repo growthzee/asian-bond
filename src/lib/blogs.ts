@@ -8502,7 +8502,7 @@ export const blogs: Blog[] = [
     title:
       "Is Your Concrete Weak? Signs You Need a Chemical Hardener Immediately — AsianBond",
     author: "Asian Bond Team",
-    date: "14th November, 2025",
+    date: "15th November, 2025",
     category: "Innovation",
     summary:
       " A concrete hardener works by penetrating the slab and reacting with free lime and calcium inside the material.",
