@@ -9729,6 +9729,169 @@ export const blogs: Blog[] = [
     image:
       "https://res.cloudinary.com/doy1iucnw/image/upload/v1764417002/Creative_1_uploaded_sfd8f9.jpg",
   },
+  {
+    id: "concrete-hardener-treatment-for-cement-and-tiles",
+    title: "Concrete Hardener Treatment for Cement & Tiles",
+    author: "Asian Bond Team",
+    date: "26th November, 2025",
+    category: "Innovation",
+    summary:
+      "Concrete hardeners strengthen the top layer of cement by reacting with free lime and forming dense, tough minerals.",
+    content: `
+<article class="prose max-w-none mx-auto">
+  <h1 class="text-3xl font-bold">Concrete Hardener Treatment for Cement & Tiles</h1>
+
+  <p>
+    Concrete hardeners strengthen the top layer of cement by reacting with free lime and forming dense, tough minerals. This reaction blocks pores, reduces moisture absorption, and creates a surface that withstands scratches, impact, and chemical spills much better than untreated concrete.
+  </p>
+
+  <p>
+    Brands like <strong>Asianbond</strong> offer both powder and liquid concrete hardeners suitable for new or old floors. These treatments are widely used in industrial units, warehouses, parking zones, block-making factories, commercial buildings, and even residential projects.
+  </p>
+
+  <h2 class="text-2xl font-semibold">Why Asianbond Hardeners Stand Out</h2>
+
+  <p>
+    Asianbond has earned a well-known reputation across India for delivering reliable concrete hardener performance, consistent product quality, and strong technical support. Many contractors consider Asianbond among the best choices for large projects thanks to its proven strength, excellent surface finish, and strong value for money.
+  </p>
+
+  <p>
+    With Asianbond’s advanced formulation, builders use these hardeners as high-durability floor treatments in warehouses, garages, ports, and logistics hubs—areas exposed to heavy loads, rolling wheels, and vibration. They are also widely used in tile plants, block factories, and precast units to boost strength and speed up demolding.
+  </p>
+
+  <h2 class="text-2xl font-semibold">Main Uses in Concrete & Flooring</h2>
+
+  <p>
+    Asianbond concrete hardener works efficiently on cement floors, concrete screeds, factory slabs, and cement-based tiles. When applied, it increases scratch resistance, reduces dust, and forms a dense, low-maintenance surface suitable for both indoor and outdoor conditions.
+  </p>
+
+  <p>
+    In industrial facilities, Asianbond floor hardener protects high-impact zones such as docks, equipment areas, loading bays, and walkways. In commercial spaces—like malls, showrooms, and home garages—the same hardener enhances shine, color retention, and long-term durability.
+  </p>
+
+  <h2 class="text-2xl font-semibold">Strengthening Paver Blocks, Tiles & Bricks</h2>
+
+  <p>
+    Paver block manufacturers rely on cement hardeners to achieve faster curing, sharper edges, and stronger interlock bonding. Asianbond’s formulation helps reduce cracking and breakage while improving production speed in tile and block units.
+  </p>
+
+  <p>
+    Liquid concrete hardener also works exceptionally well for fly ash bricks, improving density and reducing moisture penetration. By using Asianbond’s concrete hardener, brick and tile makers cut waste and increase production quality.
+  </p>
+
+  <h2 class="text-2xl font-semibold">How Concrete Hardener Works</h2>
+
+  <p>
+    Most modern concrete hardeners use silicates that react with calcium hydroxide in concrete. This forms additional <strong>C–S–H gel</strong>, which fills pores, increases density, and strengthens the surface. The densification reduces dusting, minimizes microcracks, and improves stain resistance—making it ideal for warehouses, driveways, and industrial areas.
+  </p>
+
+  <h2 class="text-2xl font-semibold">Benefits for Factories & Storage Areas</h2>
+
+  <ul>
+    <li>Factory floors treated with Asianbond often reach 40 MPa+ surface strength.</li>
+    <li>Handles constant forklift movement, pallet jack friction, and machine vibration.</li>
+    <li>Reduces downtime due to fewer repairs and faster cleaning.</li>
+    <li>Improves resistance to oils, grease, and light chemicals.</li>
+    <li>Offers long-term performance for warehouses and logistics hubs.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold">Hardener for Pavers, Tiles & Outdoor Use</h2>
+
+  <p>
+    Outdoors, Asianbond concrete hardener boosts edge strength and load capacity of paver blocks. It accelerates curing—a major benefit for block factories aiming for faster production cycles. Tile manufacturers benefit from reduced cracking, greater stability, and higher durability in paved surfaces.
+  </p>
+
+  <h2 class="text-2xl font-semibold">Bulk Purchase & Pricing</h2>
+
+  <p>
+    Asianbond hardeners are available in drums or bags, making them convenient for large-scale construction or continuous manufacturing. Bulk buying reduces cost per unit and ensures consistency across big projects.
+  </p>
+
+  <p>
+    Concrete surface hardener prices in India vary by type (liquid vs powder), quantity, and manufacturer. Asianbond maintains competitive pricing while meeting top-quality standards.
+  </p>
+
+  <h2 class="text-2xl font-semibold">Role of Admixture Manufacturers in India</h2>
+
+  <p>
+    Indian admixture manufacturers create solutions for dry-shake toppings, liquid sealers, fast-setting agents, and strength enhancers. Asianbond follows this approach by offering specialized products for industrial floors, paver blocks, precast units, tiles, and brick production.
+  </p>
+
+  <p>
+    Working with professional additive manufacturers ensures proper mixing, application guidance, and optimum curing—resulting in strong, uniform, long-lasting surfaces.
+  </p>
+
+  <h2 class="text-2xl font-semibold">Finding a Nearby Supplier</h2>
+
+  <p>
+    Many builders now search online for a “<strong>concrete hardener supplier near me</strong>” to find local distributors. Asianbond products are available through authorized dealers, building chemical stores, and regional supply hubs in industrial cities.
+  </p>
+
+  <p>
+    Local suppliers offer faster delivery, in-person support, and help selecting the right hardener for floors, bricks, tiles, or pavers.
+  </p>
+
+  <h2 class="text-2xl font-semibold">Comparison of Asianbond Hardener Types</h2>
+
+  <table class="w-full border border-gray-300 text-gray-700">
+    <thead>
+      <tr class="bg-gray-100">
+        <th class="border border-gray-300 p-2 text-left">Requirement / Use Case</th>
+        <th class="border border-gray-300 p-2 text-left">Recommended Asianbond Solution</th>
+        <th class="border border-gray-300 p-2 text-left">Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-gray-300 p-2">Heavy industrial flooring</td>
+        <td class="border border-gray-300 p-2">High-strength floor hardener</td>
+        <td class="border border-gray-300 p-2">Maximum wear protection and durability</td>
+      </tr>
+      <tr class="bg-gray-50">
+        <td class="border border-gray-300 p-2">Paver blocks, tiles & kerbstones</td>
+        <td class="border border-gray-300 p-2">Concrete hardener (powder or liquid)</td>
+        <td class="border border-gray-300 p-2">Faster curing, edge strength, reduced cracks</td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2">Old or dusty concrete</td>
+        <td class="border border-gray-300 p-2">Liquid penetrating hardener</td>
+        <td class="border border-gray-300 p-2">Densifies surface and reduces dusting</td>
+      </tr>
+      <tr class="bg-gray-50">
+        <td class="border border-gray-300 p-2">Large-scale affordable reinforcement</td>
+        <td class="border border-gray-300 p-2">Bulk powder floor toughener</td>
+        <td class="border border-gray-300 p-2">Cost-effective strength improvement</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="text-2xl font-semibold">Application Tips</h2>
+
+  <ol>
+    <li><strong>Prepare the surface:</strong> Remove dust, grease, old coatings, and loose particles.</li>
+    <li><strong>Dry-shake method:</strong> Sprinkle powder over fresh concrete and trowel evenly.</li>
+    <li><strong>Liquid method:</strong> Apply using a roller or sprayer for uniform penetration.</li>
+    <li><strong>Follow curing instructions:</strong> Allow the surface to react and harden completely.</li>
+  </ol>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  `,
+    image:
+      "https://res.cloudinary.com/doy1iucnw/image/upload/v1764594344/Creative_2_uploaded_syhwj7.jpg",
+  },
 ];
 
 export function getBlogById(id: string): Blog | undefined {
