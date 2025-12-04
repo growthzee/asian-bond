@@ -17,6 +17,7 @@ export function Header() {
 
     { name: "LEARNING", href: "/blogs" },
     { name: "CONTACT US", href: "/contact" },
+    { name: "PORTFOLIO", href: "/portfolio" },
   ];
 
   const galleryItems = [
