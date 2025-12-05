@@ -58,43 +58,54 @@ const videos = [
 const galleryImages = [
   {
     src: "/concrete1.png?height=600&width=800",
-    category: "Work",
-    title: "Industrial Flooring",
+    category: "Products",
+    title: "Concrete Hardener",
   },
   {
-    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852917/IMG-20241107-WA0000_elk4q0.jpg",
+    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764929556/0F9A5067_xqxpgw.jpg",
     category: "Team",
-    title: "Site Engineers",
+    title: "",
   },
+
   {
-    src: "/concrete2.png?height=600&width=800",
-    category: "Work",
-    title: "Polished Finish",
+    src: "/hardner.jpeg?q=80&w=800",
+    category: "Products",
+    title: "Concrete Hrdener",
   },
   {
     src: "/wall-putty-gallery.jpeg?height=600&width=800",
-    category: "Products",
-    title: "Wall Putty Application",
-  },
-  {
-    src: "/hardner.jpeg?q=80&w=800",
     category: "Products",
     title: "Hardener Drums",
   },
   {
     src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852669/IMG-20250304-WA0004_xsplmp.jpg",
-    category: "Events",
-    title: "Expo 2025",
+    category: "Work",
+    title: "Work Sample",
+  },
+  {
+    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764929556/0F9A5184_rtrnsc.jpg",
+    category: "Team",
+    title: "",
+  },
+  {
+    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764929555/IMG_20250609_124338_g0vrpl.jpg",
+    category: "Team",
+    title: "",
+  },
+  {
+    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764929555/IMG_20250608_100244_aalbun.jpg",
+    category: "Team",
+    title: "",
   },
   {
     src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852739/IMG-20240928-WA0012_fvsgaj.jpg",
-    category: "Team",
-    title: "Safety Training",
+    category: "Work",
+    title: "Work Sample",
   },
   {
-    src: "/concrete3.png?height=600&width=800",
+    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852917/IMG-20241107-WA0000_elk4q0.jpg",
     category: "Work",
-    title: "Warehouse Project",
+    title: "Work Sample",
   },
 ];
 
@@ -179,7 +190,7 @@ export default function PortfolioPage() {
             >
               <div className="aspect-square relative rounded-2xl overflow-hidden shadow-2xl border-8 border-slate-50">
                 <Image
-                  src="/image3.jpeg?q=80&w=1000"
+                  src="https://res.cloudinary.com/doy1iucnw/image/upload/v1764930376/ab01_zyl2cl.jpg?q=80&w=1000"
                   alt="About Us"
                   fill
                   className="object-cover"
@@ -210,21 +221,28 @@ export default function PortfolioPage() {
                 variants={fadeInUp}
                 className="text-orange-600 font-bold uppercase tracking-widest text-sm mb-4"
               >
-                Who We Are
+                WHO WE ARE
               </motion.h2>
               <motion.h3
                 variants={fadeInUp}
                 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight"
               >
-                Engineering the Future of Concrete
+                Strengthening the Future of Concrete
               </motion.h3>
               <motion.p
                 variants={fadeInUp}
                 className="text-slate-600 text-lg mb-8 leading-relaxed"
               >
-                At Asian Bond, we combine advanced chemical engineering with
-                on-site expertise to transform ordinary concrete into
-                extraordinary surfaces.
+                At Asian Bond, we specialize in advanced concrete hardener
+                solutions designed to enhance durability, density, and long-term
+                performance of all concrete surfaces. With decades of chemical
+                expertise and on-site experience, our formulations consistently
+                deliver high-strength, dust-free, and long-lasting results —
+                making us one of the best concrete hardener in India trusted by
+                builders and professionals. Our mission is simple — to provide
+                powerful, cost-effective, and reliable concrete hardener
+                solutions that upgrade ordinary floors into strong, sustainable,
+                and superior surfaces.
               </motion.p>
 
               <motion.div
@@ -232,9 +250,9 @@ export default function PortfolioPage() {
                 className="grid grid-cols-2 gap-6 mb-8"
               >
                 {[
-                  { icon: Building, label: "500+ Projects" },
-                  { icon: Users, label: "Happy Clients" },
-                  { icon: Briefcase, label: "Expert Team" },
+                  { icon: Building, label: "500+ Projects Delivered" },
+                  { icon: Users, label: "Expert Team" },
+                  { icon: Briefcase, label: "Happy Clients" },
                   { icon: CheckCircle, label: "Certified Quality" },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3">
