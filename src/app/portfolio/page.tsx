@@ -107,6 +107,11 @@ const galleryImages = [
     category: "Work",
     title: "Work Sample",
   },
+  {
+    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764930458/IMG-20240928-WA0016_oyvybj.jpg",
+    category: "Work",
+    title: "Work Sample",
+  },
 ];
 
 const galleryCategories = ["All", "Team", "Events", "Work", "Products"];
