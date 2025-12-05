@@ -2,12 +2,12 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import {
-  ArrowRight,
   Briefcase,
   Building,
   CheckCircle,
+  ChevronLeft,
+  ChevronRight,
   ExternalLink,
-  Package,
   Play,
   Trophy,
   Users,
@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 // Import your existing UI components
 import { Footer } from "@/components/sections/footer";
@@ -26,142 +26,79 @@ import { Button } from "@/components/ui/button";
 
 // --- Data Definitions ---
 
-const products = [
-  {
-    id: "concrete-hardner",
-    title: "Concrete Hardner",
-    subtitle: "Base Materials",
-    description:
-      "Welcome to ASIAN BOND, your premier destination for high-quality concrete hardeners. We are a leading manufacturer and supplier.",
-    category: "Aggregates",
-    image: "/concrete-hardner.jpg",
-  },
-  {
-    id: "asian-bond-floor-hardner",
-    title: "Asian Bond Floor Hardener",
-    subtitle: "Foundation Materials",
-    description:
-      "Introducing Asian Bond Ironite Floor Hardener: the ultimate solution for fortifying and protecting your concrete floors.",
-    category: "Steel Products",
-    image: "/wall-hardner.png",
-  },
-  {
-    id: "asian-bond-iron-oxides",
-    title: "Asia Bond Iron Oxides",
-    subtitle: "Base Materials",
-    description:
-      "Discover the power of color with Asian Bond Iron Oxide Pigments. The versatile solution for vibrant, long-lasting hues.",
-    category: "Aggregates",
-    image: "/iron-oxide.png",
-  },
-  {
-    id: "asian-bond-demoulding-agent",
-    title: "Asia Bond Demoulding Agent",
-    subtitle: "Base Materials",
-    description:
-      "Asian Bond Demoulding Agent is the ultimate solution for effortless and efficient demoulding.",
-    category: "Aggregates",
-    image: "/demoulding-agent.png",
-  },
-  {
-    id: "asian-bond-wall-putty",
-    title: "Asian Bond Wall Putty",
-    subtitle: "Foundation Materials",
-    description:
-      "Introducing 100% Waterproof ASIAN BOND WALL PUTTY - the ultimate solution for all your waterproofing needs!",
-    category: "Wall Finishing",
-    image: "/wall-putty.png",
-  },
-  {
-    id: "asian-bond-curing-compound",
-    title: "Asia Bond Curing Compound",
-    subtitle: "Base Materials",
-    description:
-      "The advanced solution for optimal concrete curing and protection is Asian Bond Curing Compound.",
-    category: "Aggregates",
-    image: "/curing-compound.png",
-  },
-  {
-    id: "asian-bond-tile-adhesive",
-    title: "Asian Bond Tile Adhesive",
-    subtitle: "Base Materials",
-    description:
-      "ASIAN BOND Tile Adhesive is a blended modified polymer cement base adhesive which improves the strength.",
-    category: "Aggregates",
-    image: "/tile-adhesive.png",
-  },
-  {
-    id: "asian-bond-grout-powder",
-    title: "Asian Bond Grout Powder",
-    subtitle: "Base Materials",
-    description:
-      "ASIAN BOND Grout Powder is a polymer modified cement joint filler, used in both interior & exterior joints.",
-    category: "Aggregates",
-    image: "/grout-powder.png",
-  },
-];
-
-const projects = [
-  {
-    id: 1,
-    title: "Metro Station Flooring",
-    category: "Infrastructure",
-    location: "New Delhi",
-    image:
-      "https://res.cloudinary.com/doy1iucnw/image/upload/v1764851410/IMG_20250913_142627_marjvy.jpg?q=80&w=800",
-    description:
-      "High-traffic industrial flooring solution using Asian Bond Hardener.",
-  },
-  {
-    id: 2,
-    title: "Tech Park Warehouse",
-    category: "Commercial",
-    location: "Bangalore",
-    image:
-      "https://res.cloudinary.com/doy1iucnw/image/upload/v1764851494/IMG_20251003_135308_klfcfo.jpg?q=80&w=800",
-    description: "Dust-proof coating for 50,000 sq.ft server storage facility.",
-  },
-  {
-    id: 3,
-    title: "Luxury Hotel Driveway",
-    category: "Hospitality",
-    location: "Mumbai",
-    image:
-      "https://res.cloudinary.com/doy1iucnw/image/upload/v1764851624/IMG_20250108_113857_r8klqj.jpg?q=80&w=800",
-    description:
-      "Decorative polished concrete finish with high abrasion resistance.",
-  },
-];
-
 const videos = [
   {
-    id: "VS6l_n1UOZM",
-    title: "Application Guide: Step by Step",
-    thumbnail:
-      "https://res.cloudinary.com/doy1iucnw/image/upload/v1764574316/VS6l_n1UOZM-HD_qv93an.jpg",
+    id: "RIynJ0xbJ2M",
+    title: "Application Guide",
   },
   {
-    id: "RBap5x65KIo",
-    title: "Client Success Story: Warehouse",
-    thumbnail:
-      "https://res.cloudinary.com/doy1iucnw/image/upload/v1764574554/RBap5x65KIo-HD_bgdfxv.jpg",
+    id: "vKkcmziIeqM",
+    title: "Client Success",
   },
   {
-    id: "I9R9tJNJRE8",
-    title: "The Science of Concrete",
-    thumbnail:
-      "https://res.cloudinary.com/doy1iucnw/image/upload/v1764574882/I9R9tJNJRE8-HD_mgsrra.jpg",
+    id: "tGRSnfTAcs4",
+    title: "Concrete Science",
+  },
+  {
+    id: "q-llnBeKR8A",
+    title: "Site Visit",
+  },
+
+  {
+    id: "VpSVyD_dl2Y",
+    title: "Factory Tour",
+  },
+
+  {
+    id: "ivSxTB2KMTo",
+    title: "Testing Lab",
   },
 ];
 
 const galleryImages = [
-  "/wall-putty-gallery.jpeg?height=600&width=800",
-  "/concrete2.png?height=600&width=800",
-  "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852917/IMG-20241107-WA0000_elk4q0.jpg?height=600&width=800",
-  "/hardner.jpeg?q=80&w=800",
-  "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852669/IMG-20250304-WA0004_xsplmp.jpg?q=80&w=800",
-  "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852739/IMG-20240928-WA0012_fvsgaj.jpg?q=80&w=800",
+  {
+    src: "/concrete1.png?height=600&width=800",
+    category: "Work",
+    title: "Industrial Flooring",
+  },
+  {
+    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852917/IMG-20241107-WA0000_elk4q0.jpg",
+    category: "Team",
+    title: "Site Engineers",
+  },
+  {
+    src: "/concrete2.png?height=600&width=800",
+    category: "Work",
+    title: "Polished Finish",
+  },
+  {
+    src: "/wall-putty-gallery.jpeg?height=600&width=800",
+    category: "Products",
+    title: "Wall Putty Application",
+  },
+  {
+    src: "/hardner.jpeg?q=80&w=800",
+    category: "Products",
+    title: "Hardener Drums",
+  },
+  {
+    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852669/IMG-20250304-WA0004_xsplmp.jpg",
+    category: "Events",
+    title: "Expo 2025",
+  },
+  {
+    src: "https://res.cloudinary.com/doy1iucnw/image/upload/v1764852739/IMG-20240928-WA0012_fvsgaj.jpg",
+    category: "Team",
+    title: "Safety Training",
+  },
+  {
+    src: "/concrete3.png?height=600&width=800",
+    category: "Work",
+    title: "Warehouse Project",
+  },
 ];
+
+const galleryCategories = ["All", "Team", "Events", "Work", "Products"];
 
 // --- Animation Variants ---
 const fadeInUp = {
@@ -180,9 +117,33 @@ const staggerContainer = {
 export default function PortfolioPage() {
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  // Carousel Ref
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const filteredImages =
+    activeCategory === "All"
+      ? galleryImages
+      : galleryImages.filter((img) => img.category === activeCategory);
+
+  // Carousel Scroll Functions
+  const scrollCarousel = (direction: "left" | "right") => {
+    if (carouselRef.current) {
+      const { scrollLeft, clientWidth } = carouselRef.current;
+      const scrollAmount = clientWidth * 0.8;
+
+      const scrollTo =
+        direction === "left"
+          ? scrollLeft - scrollAmount
+          : scrollLeft + scrollAmount;
+
+      carouselRef.current.scrollTo({ left: scrollTo, behavior: "smooth" });
+    }
+  };
 
   return (
-    <div className="min-h-screen bg-white font-sans text-slate-800 selection:bg-orange-100 selection:text-orange-900">
+    <div className="min-h-screen bg-white font-sans text-slate-800 selection:bg-orange-100 selection:text-orange-900 pt-20">
       <Header />
 
       {/* 1. HERO SECTION */}
@@ -209,7 +170,6 @@ export default function PortfolioPage() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Image Side */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -240,7 +200,6 @@ export default function PortfolioPage() {
               </div>
             </motion.div>
 
-            {/* Content Side */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -265,8 +224,7 @@ export default function PortfolioPage() {
               >
                 At Asian Bond, we combine advanced chemical engineering with
                 on-site expertise to transform ordinary concrete into
-                extraordinary surfaces. Our mission is to provide durable,
-                sustainable, and cost-effective solutions.
+                extraordinary surfaces.
               </motion.p>
 
               <motion.div
@@ -292,216 +250,90 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* 3. OUR PRODUCTS SECTION */}
-      <section className="py-24 bg-gradient-to-br from-slate-50 to-orange-50/30">
+      {/* 5. YOUTUBE REELS CAROUSEL SECTION */}
+      <section className="py-24 bg-slate-900 text-white overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <Badge className="bg-orange-600 text-white mb-4 border-none px-4 py-1.5 text-sm uppercase tracking-wider">
-              Product Catalog
-            </Badge>
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
-              Premium Construction{" "}
-              <span className="text-orange-600">Chemicals</span>
-            </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              Advanced chemical formulations designed to enhance the strength,
-              durability, and aesthetics of your concrete surfaces.
-            </p>
-          </motion.div>
-
-          {/* Product Grid */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-          >
-            {products.map((product) => (
-              <motion.div
-                key={product.id}
-                variants={fadeInUp}
-                className="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:shadow-orange-100 transition-all duration-300 flex flex-col"
-              >
-                {/* Product Image */}
-                <div className="relative h-56 bg-slate-50 overflow-hidden p-6 flex items-center justify-center">
-                  <div className="absolute top-4 left-4 z-10">
-                    <Badge
-                      variant="secondary"
-                      className="bg-white/90 text-slate-800 text-xs font-bold shadow-sm backdrop-blur-sm"
-                    >
-                      {product.category}
-                    </Badge>
-                  </div>
-                  <Image
-                    src={product.image || "/placeholder.svg"}
-                    alt={product.title}
-                    fill
-                    className="object-contain p-4 group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-6 flex flex-col flex-grow">
-                  <div className="mb-auto">
-                    <div className="text-xs text-orange-600 font-semibold mb-2 uppercase tracking-wide">
-                      {product.subtitle}
-                    </div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">
-                      {product.title}
-                    </h3>
-                    <p className="text-slate-500 text-sm line-clamp-3 leading-relaxed mb-4">
-                      {product.description}
-                    </p>
-                  </div>
-
-                  {/* Footer of Card - Price Removed, Button Full Width */}
-                  <div className="pt-4 border-t border-slate-100 mt-auto">
-                    <Link
-                      href={`/products/${product.id}`}
-                      className="block w-full"
-                    >
-                      <Button
-                        size="sm"
-                        className="w-full bg-slate-900 hover:bg-orange-600 text-white rounded-lg transition-colors flex items-center justify-center"
-                      >
-                        <Package className="w-4 h-4 mr-2" /> View Details
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-
-          <div className="mt-16 text-center">
-            <Link href="/products">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-slate-900 text-slate-900 font-bold hover:bg-slate-900 hover:text-white transition-all px-8 h-12"
-              >
-                View Full Catalog
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. FEATURED PROJECTS */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
-              Featured <span className="text-orange-600">Projects</span>
-            </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              Explore our portfolio of successfully completed projects across
-              various industries.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {projects.map((project, idx) => (
-              <motion.div
-                key={project.id}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.2 }}
-                className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-orange-100 transition-all duration-300 border border-slate-100"
-              >
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <Badge className="bg-white/90 text-orange-700 hover:bg-white">
-                      {project.category}
-                    </Badge>
-                  </div>
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm text-slate-500 mb-4 flex items-center gap-2">
-                    <Building className="h-3 w-3" /> {project.location}
-                  </p>
-                  <p className="text-slate-600 text-sm mb-6 line-clamp-2">
-                    {project.description}
-                  </p>
-                  <Link
-                    href="#"
-                    className="inline-flex items-center text-orange-600 font-semibold text-sm hover:underline"
-                  >
-                    View Case Study <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. YOUTUBE VIDEO GALLERY */}
-      <section className="py-24 bg-slate-900 text-white">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
-            <div>
-              <Badge className="bg-orange-600 text-white mb-4 border-none">
-                Tutorials & Showcases
+          {/* UPDATED HEADER ALIGNMENT */}
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 gap-6 md:gap-4">
+            <div className="text-center md:text-left">
+              <Badge className="bg-orange-600 text-white mb-4 border-none px-3 py-1 text-sm uppercase tracking-wide">
+                Reels & Shorts
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold">Watch Us Work</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Site Highlights
+              </h2>
             </div>
-            <Button
-              variant="outline"
-              className="border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800 bg-transparent"
-            >
-              Visit YouTube Channel <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
+
+            {/* Controls */}
+            <div className="flex items-center gap-4">
+              {/* Arrows only visible on desktop/larger screens */}
+              <div className="hidden md:flex gap-2">
+                <button
+                  onClick={() => scrollCarousel("left")}
+                  className="p-3 rounded-full border border-slate-700 hover:bg-slate-800 hover:text-white transition-colors"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={() => scrollCarousel("right")}
+                  className="p-3 rounded-full border border-slate-700 hover:bg-slate-800 hover:text-white transition-colors"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
+
+              <Link
+                href="https://www.youtube.com/@kadambariproducts-asianbon3314"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  className="border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800 bg-transparent h-12 px-6"
+                >
+                  Visit YouTube Channel{" "}
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Carousel */}
+          <div
+            ref={carouselRef}
+            className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-6 px-6 md:mx-0 md:px-0"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
             {videos.map((video, idx) => (
               <motion.div
-                key={video.id}
+                key={idx}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                onClick={() => setPlayingVideo(video.id)}
-                className="group cursor-pointer relative aspect-video rounded-xl overflow-hidden border border-slate-700 shadow-xl"
+                className="group cursor-pointer relative min-w-[280px] sm:min-w-[300px] md:min-w-[320px] aspect-[9/16] rounded-2xl overflow-hidden border border-slate-700 shadow-xl bg-black snap-center flex-shrink-0"
               >
-                <Image
-                  src={video.thumbnail}
-                  alt={video.title}
-                  fill
-                  className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                <iframe
+                  className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                  src={`https://www.youtube.com/embed/${video.id}?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=${video.id}`}
+                  title={video.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  loading="lazy"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-orange-600/90 flex items-center justify-center pl-1 text-white shadow-lg group-hover:scale-110 group-hover:bg-orange-600 transition-all duration-300">
-                    <Play className="w-6 h-6 fill-current" />
+
+                <div
+                  className="absolute inset-0 z-10 cursor-pointer bg-transparent"
+                  onClick={() => setPlayingVideo(video.id)}
+                >
+                  <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent pointer-events-none">
+                    <h3 className="text-white font-bold text-sm md:text-base leading-tight drop-shadow-md">
+                      {video.title}
+                    </h3>
+                    <p className="text-xs text-slate-300 mt-1 flex items-center">
+                      <Play className="w-3 h-3 mr-1 fill-current" /> Tap for
+                      Sound
+                    </p>
                   </div>
-                </div>
-                <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-slate-900 to-transparent">
-                  <h3 className="text-white font-medium truncate">
-                    {video.title}
-                  </h3>
                 </div>
               </motion.div>
             ))}
@@ -509,13 +341,13 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* 6. IMAGE GALLERY (Masonry Style) */}
+      {/* 6. IMAGE GALLERY (Categorized) */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-center mb-16"
+            className="text-center mb-10"
           >
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
               Our Work <span className="text-orange-600">Gallery</span>
@@ -523,38 +355,71 @@ export default function PortfolioPage() {
             <div className="h-1 w-24 bg-orange-500 mx-auto rounded-full"></div>
           </motion.div>
 
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-            {galleryImages.map((src, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.05 }}
-                className="relative group rounded-2xl overflow-hidden break-inside-avoid cursor-zoom-in shadow-md hover:shadow-xl transition-all"
-                onClick={() => setSelectedImage(src)}
+          {/* Filter Buttons */}
+          <div className="flex flex-wrap justify-center gap-2 mb-12">
+            {galleryCategories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+                  activeCategory === category
+                    ? "bg-orange-600 text-white shadow-lg shadow-orange-200"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                }`}
               >
-                <Image
-                  src={src}
-                  alt={`Gallery Image ${idx}`}
-                  width={800}
-                  height={600}
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="bg-white/20 backdrop-blur-sm p-3 rounded-full text-white">
-                    <ZoomIn className="h-6 w-6" />
-                  </div>
-                </div>
-              </motion.div>
+                {category}
+              </button>
             ))}
           </div>
+
+          {/* Gallery Grid */}
+          <motion.div
+            layout
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <AnimatePresence mode="popLayout">
+              {filteredImages.map((image) => (
+                <motion.div
+                  layout
+                  key={image.src}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                  className="relative group rounded-2xl overflow-hidden cursor-zoom-in shadow-md hover:shadow-xl aspect-[4/3]"
+                  onClick={() => setSelectedImage(image.src)}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+                    <div className="bg-white/20 backdrop-blur-sm p-3 rounded-full mb-3">
+                      <ZoomIn className="h-6 w-6" />
+                    </div>
+                    <span className="font-bold text-lg">{image.title}</span>
+                    <span className="text-sm text-orange-200">
+                      {image.category}
+                    </span>
+                  </div>
+
+                  <div className="absolute top-4 left-4">
+                    <Badge className="bg-white/90 text-slate-900 font-bold backdrop-blur-sm shadow-sm hover:bg-white">
+                      {image.category}
+                    </Badge>
+                  </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </motion.div>
         </div>
       </section>
 
       {/* --- MODALS --- */}
 
-      {/* Video Modal */}
+      {/* Video Modal (Reels Format) */}
       <AnimatePresence>
         {playingVideo && (
           <motion.div
@@ -564,7 +429,10 @@ export default function PortfolioPage() {
             className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/95 backdrop-blur-md p-4"
             onClick={() => setPlayingVideo(null)}
           >
-            <div className="relative w-full max-w-5xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-slate-700">
+            <div
+              className="relative w-full max-w-md aspect-[9/16] bg-black rounded-2xl overflow-hidden shadow-2xl border border-slate-700"
+              onClick={(e) => e.stopPropagation()}
+            >
               <button
                 onClick={() => setPlayingVideo(null)}
                 className="absolute top-4 right-4 z-10 p-2 bg-black/60 text-white rounded-full hover:bg-orange-600 transition-colors"
@@ -574,7 +442,7 @@ export default function PortfolioPage() {
               <iframe
                 width="100%"
                 height="100%"
-                src={`https://www.youtube.com/embed/${playingVideo}?autoplay=1`}
+                src={`https://www.youtube.com/embed/${playingVideo}?autoplay=1&modestbranding=1&rel=0`}
                 title="Video Player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

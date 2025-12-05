@@ -1,20 +1,13 @@
 "use client";
-import { useEffect, useState } from "react";
 import { Header } from "@/components/sections/header";
 import { HeroSection } from "@/components/sections/hero";
-import { CompanyStatsSection } from "@/components/sections/company-stats";
 import { MaterialCatalogSection } from "@/components/sections/material-catalog";
+import { useEffect, useState } from "react";
 
-import { ProcessSection } from "@/components/sections/process";
-import { ToolsResourcesSection } from "@/components/sections/tools-resources";
-import { SustainabilitySection } from "@/components/sections/sustainability";
-import { ServicesSection } from "@/components/sections/services";
-import { TestimonialsSection } from "@/components/sections/testimonials";
-import { NewsletterSection } from "@/components/sections/newsletter";
 import { CTASection } from "@/components/sections/cta";
 import { Footer } from "@/components/sections/footer";
-import { FeaturedProjectsSection } from "@/components/sections/featured-projects";
 import { IndiaMapSection } from "@/components/sections/map-section";
+import { TestimonialsSection } from "@/components/sections/testimonials";
 import { VideoTestimonialsSection } from "@/components/sections/video-testimonials-section";
 
 export default function ConstructionLanding() {
