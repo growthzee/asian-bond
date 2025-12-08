@@ -238,16 +238,17 @@ export default function PortfolioPage() {
                 variants={fadeInUp}
                 className="text-slate-600 text-lg mb-8 leading-relaxed"
               >
-                At Asian Bond, we specialize in advanced concrete hardener
-                solutions designed to enhance durability, density, and long-term
-                performance of all concrete surfaces. With decades of chemical
-                expertise and on-site experience, our formulations consistently
-                deliver high-strength, dust-free, and long-lasting results —
-                making us one of the best concrete hardener in India trusted by
-                builders and professionals. Our mission is simple — to provide
-                powerful, cost-effective, and reliable concrete hardener
-                solutions that upgrade ordinary floors into strong, sustainable,
-                and superior surfaces.
+                We‍‌‍‍‌ are a team of experts on concrete performance, who are
+                fully committed to the expansion of India's manufacturing and
+                construction industries. At Asian Bond, the idea of merely
+                selling concrete hardeners does not come to our mind-we provide
+                strength, durability, and long-term performance instead. We are
+                industry insiders for many years and possess intensive technical
+                knowledge. Thus, we support factories and the process of
+                manufacturing paver blocks, fly ash bricks, RCC products, AAC
+                blocks, and prec-cast elements to be of higher quality and
+                stronger in nature. Our products are engineered to ease the
+                problem of breakage, surface hardness, and product life.
               </motion.p>
 
               <motion.div
@@ -255,7 +256,7 @@ export default function PortfolioPage() {
                 className="grid grid-cols-2 gap-6 mb-8"
               >
                 {[
-                  { icon: Building, label: "500+ Projects Delivered" },
+                  { icon: Building, label: "1000+ Projects Delivered" },
                   { icon: Users, label: "Expert Team" },
                   { icon: Briefcase, label: "Happy Clients" },
                   { icon: CheckCircle, label: "Certified Quality" },
