@@ -11788,7 +11788,7 @@ export const blogs: Blog[] = [
     title:
       "Does Concrete Hardener Actually Boost MPa Strength? What Lab Tests from AsianBond Reveal",
     author: "Asian Bond Team",
-    date: "8th December, 2025",
+    date: "9th December, 2025",
     category: "Innovation",
     summary:
       "Building strong concrete floors, pavers, or heavy-duty slabs requires more than proper mix design—it demands long-term durability and load resistance.",
