@@ -17807,7 +17807,7 @@ export const blogs: Blog[] = [
   {
     id: "concrete-hardener-for-forklift-pallet-truck-movement-areas-strengthen-your-floors-with-asianbond",
     title:
-      "Concrete Hardener for Forklift &amp; Pallet Truck Movement Areas: Strengthen Your Floors with AsianBond",
+      "Concrete Hardener for Forklift, Pallet Truck Movement Areas: Strengthen Your Floors with AsianBond",
     author: "Asian Bond Team",
     date: "17th January, 2026",
     category: "Innovation",
