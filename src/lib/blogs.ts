@@ -17809,7 +17809,7 @@ export const blogs: Blog[] = [
     title:
       "Concrete Hardener for Forklift &amp; Pallet Truck Movement Areas: Strengthen Your Floors with AsianBond",
     author: "Asian Bond Team",
-    date: "16th January, 2026",
+    date: "17th January, 2026",
     category: "Innovation",
     summary:
       "In warehouses, factories, and distribution centers, concrete floors face relentless punishment from forklifts and pallet trucks. Continuous movement under heavy loads causes dusting, surface pitting, and cracking that disrupt operations and inflate maintenance costs. A high-performance concrete hardener changes this outcome by converting weak, porous slabs into dense, long-lasting industrial floors.",
