@@ -19622,6 +19622,281 @@ export const blogs: Blog[] = [
     image:
       "https://res.cloudinary.com/dbtmhiwij/image/upload/v1770033421/2_l8ypqd.png",
   },
+  {
+    id: "how-to-apply-concrete-hardener-correctly-for-long-lasting-floors",
+    title: "How to Apply Concrete Hardener Correctly for Long-Lasting Floors",
+    author: "Asian Bond Team",
+    date: "29th January, 2026",
+    category: "Innovation",
+    summary:
+      "A solid surface begins with smart choices. Using a concrete hardener makes floors tougher against wear, reduces dust, and increases strength under load. When applied correctly, it extends the life of industrial slabs, driveways, storage areas, masonry units, and precast elements. Across India, AsianBond is widely chosen because its formula performs reliably under heat, heavy traffic, and changing weather.",
+    content: `
+<article class="prose max-w-none mx-auto">
+
+  <h1 class="text-3xl font-bold">
+    How to Apply Concrete Hardener Correctly for Long-Lasting Floors
+  </h1>
+
+  <p>
+    A solid surface begins with smart choices. Using a concrete hardener makes floors tougher against wear, reduces dust, and increases strength under load. When applied correctly, it extends the life of industrial slabs, driveways, storage areas, masonry units, and precast elements. Across India, AsianBond is widely chosen because its formula performs reliably under heat, heavy traffic, and changing weather.
+  </p>
+
+  <p>
+    Results depend not only on the product, but on how it is handled. Rushing application, skipping preparation, or ignoring weather conditions often leads to failure. Longevity comes from consistency, patience, and doing the basics right at every stage.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Concrete Hardener Explained
+  </h2>
+
+  <p>
+    Concrete hardener works by reacting with leftover lime and calcium hydroxide in concrete. This reaction forms additional calcium silicate hydrate (C-S-H), the compound responsible for concrete’s strength. As a result, the surface becomes denser, resists abrasion better, produces less dust, and handles impact more effectively.
+  </p>
+
+  <p>
+    In India, these treatments are most common in high-use environments such as factories, warehouses, parking slabs, paver blocks, brick manufacturing units, and precast RCC structures.
+  </p>
+
+  <ul>
+    <li>Factory and warehouse floors</li>
+    <li>Parking areas and driveways</li>
+    <li>Paver blocks and interlocking tiles</li>
+    <li>Brick and block manufacturing</li>
+    <li>Precast elements and RCC components</li>
+  </ul>
+
+  <p>
+    AsianBond offers both liquid and powder-based concrete hardeners, engineered for Indian climate conditions and certified to ISO standards.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Why Concrete Hardener Is Widely Used in India
+  </h2>
+
+  <p>
+    With rising construction activity, untreated concrete often fails under traffic, weather, and load stress. A proper hardener strengthens the top layer so it becomes part of the slab itself rather than a peelable coating.
+  </p>
+
+  <ul>
+    <li>Improves surface hardness and compressive resistance</li>
+    <li>Reduces permeability and water absorption</li>
+    <li>Minimizes dust generation</li>
+    <li>Enhances slip resistance and appearance</li>
+  </ul>
+
+  <p>
+    Contractors prefer AsianBond because it reduces long-term repair costs. Fewer cracks mean lower maintenance, which is why it is frequently specified directly in project drawings.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Pre-Application Preparation
+  </h2>
+
+  <p>
+    Most failures occur due to poor preparation. Even the best concrete hardener will underperform if applied on an unprepared surface.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    1. Cure the Concrete Properly
+  </h3>
+
+  <p>
+    Allow freshly poured concrete to cure for 7–14 days before applying liquid hardener unless otherwise specified. For dry-shake hardeners, application must happen while the concrete is still workable during finishing.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    2. Clean the Surface Thoroughly
+  </h3>
+
+  <p>
+    Remove dust, grease, oil, curing compounds, paints, and sealers. Hardener cannot penetrate through coatings. Mechanical scrubbing or pressure washing is often required.
+  </p>
+
+  <p>
+    Once pores are open and clean, AsianBond concrete hardener penetrates deeply and reacts evenly throughout the slab.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    3. Check Moisture and Weather Conditions
+  </h3>
+
+  <p>
+    The slab should be dry to the touch but not overdried. Avoid application during rain, extreme heat, or freezing conditions. In India, early mornings and late afternoons are ideal to avoid heat and sudden monsoon showers.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Applying Liquid Concrete Hardener
+  </h2>
+
+  <h3 class="text-xl font-semibold">
+    1. Select the Right Product
+  </h3>
+
+  <p>
+    Silicate-based hardeners such as lithium, potassium, or sodium variants work differently. AsianBond formulations combine silicates with nano-silica for faster reaction and deeper penetration.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    2. Patch Test First
+  </h3>
+
+  <p>
+    Always test a small area before full application. This reveals absorption rate, drying time, and compatibility with the concrete.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    3. Apply Generously and Evenly
+  </h3>
+
+  <p>
+    Apply using a low-pressure sprayer, roller, or brush as recommended. Avoid thin application or puddling. Two to three coats are often required, with 4–6 hours between layers.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    4. Scrub and Allow Reaction Time
+  </h3>
+
+  <p>
+    Light brushing helps the liquid penetrate deeper. Allow the product to react as specified in the technical sheet before allowing foot or vehicle traffic.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    5. Neutralize and Clean if Required
+  </h3>
+
+  <p>
+    Some formulations may leave light residue. If needed, rinse with clean water or a mild neutralizing solution, then allow the surface to air dry.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Using Powder-Based (Dry-Shake) Concrete Hardeners
+  </h2>
+
+  <h3 class="text-xl font-semibold">
+    1. Choose the Correct Concrete Mix
+  </h3>
+
+  <p>
+    Maintain a water–cement ratio near 0.50. Avoid air-entrained concrete for indoor industrial floors, as trapped air reduces hardener effectiveness.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    2. Apply at the Right Time
+  </h3>
+
+  <p>
+    Broadcast the powder once surface bleed water disappears but before the slab stiffens. Timing is critical for proper bonding.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    3. Broadcast Evenly and Float In
+  </h3>
+
+  <p>
+    Apply 3–7 kg per square meter depending on expected traffic. Float and power-trowel to embed the hardener into the surface.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    4. Finish and Cure Properly
+  </h3>
+
+  <p>
+    Maintain moisture during curing using membranes or controlled curing methods. Proper curing ensures full strength development.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Common Mistakes to Avoid
+  </h2>
+
+  <ul>
+    <li>Applying on wet or dirty surfaces</li>
+    <li>Using too much water in the mix</li>
+    <li>Uneven application or thin coverage</li>
+    <li>Ignoring weather conditions</li>
+    <li>Failing to remove old coatings</li>
+  </ul>
+
+  <p>
+    Always wear gloves, eye protection, and masks during application. Ensure good ventilation when working indoors.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Why Choose AsianBond Concrete Hardener
+  </h2>
+
+  <ul>
+    <li>Formulated for India’s climate extremes</li>
+    <li>Nano-silica enhanced for deep penetration</li>
+    <li>Wide product range for different applications</li>
+    <li>ISO-certified manufacturing</li>
+    <li>Cost-effective for bulk usage</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold">
+    Application Tips for Indian Conditions
+  </h2>
+
+  <h3 class="text-xl font-semibold">
+    Factory and Warehouse Floors
+  </h3>
+
+  <p>
+    Apply additional coats in high-traffic zones. Reapply periodically in forklift paths to maintain strength.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    Parking Areas and Driveways
+  </h3>
+
+  <p>
+    Use on paver blocks and kerbs after proper drainage preparation to prevent moisture damage.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    Brick and Block Manufacturing
+  </h3>
+
+  <p>
+    Early application strengthens bricks internally, improving resistance to weather and load stress.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    Residential and Commercial Floors
+  </h3>
+
+  <p>
+    Maintains appearance while increasing durability without altering surface aesthetics.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Maintenance After Hardener Application
+  </h2>
+
+  <ul>
+    <li>Clean periodically with mild soap</li>
+    <li>Avoid acidic or harsh cleaners</li>
+    <li>Reapply in high-wear areas after several years</li>
+    <li>Repair cracks early to prevent water ingress</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold">
+    Conclusion
+  </h2>
+
+  <p>
+    Long-lasting concrete depends on preparation, timing, and correct application. AsianBond concrete hardener delivers reliable performance when applied with care. Weather awareness, safety practices, and patience make the difference between short-term results and decades of durability.
+  </p>
+
+  <p>
+    Whether used on industrial floors or residential paths, consistent application ensures strength, reduced maintenance, and long-term value across India’s diverse conditions.
+  </p>
+
+</article>
+
+  `,
+    image:
+      "https://res.cloudinary.com/dbtmhiwij/image/upload/v1770119932/Artboard_4_3_wyw7xo.jpg",
+  },
 ];
 
 export function getBlogById(id: string): Blog | undefined {
