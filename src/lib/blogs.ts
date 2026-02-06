@@ -20264,7 +20264,7 @@ export const blogs: Blog[] = [
     title:
       "Can Old Concrete Floors Be Treated with Hardener? A Complete Professional Guide",
     author: "Asian Bond Team",
-    date: "2nd January, 2026",
+    date: "2nd February, 2026",
     category: "Innovation",
     summary:
       "Old concrete floors often show their age through cracks, dusting, surface softness, and loss of grip. Factories, warehouses, parking areas, homes, and retail spaces all face this issue over time. Many assume demolition is the only fix, yet modern construction practices offer a smarter alternative—strengthening the existing slab with a concrete hardener.",
