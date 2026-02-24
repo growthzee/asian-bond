@@ -23590,7 +23590,7 @@ export const blogs: Blog[] = [
 
   `,
     image:
-      "https://res.cloudinary.com/dbtmhiwij/image/upload/v1771832447/WhatsApp_Image_2026-02-14_at_1.12.46_PM_wyacav.jpg",
+      "https://res.cloudinary.com/dbtmhiwij/image/upload/v1771934091/WhatsApp_Image_2026-02-14_at_1.12.46_PM_1_ckljzl.jpg",
   },
 ];
 
