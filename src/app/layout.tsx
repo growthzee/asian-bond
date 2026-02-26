@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import WhatsAppButton from "@/components/WhatsAppButton"; // Import here
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        {/* Google Analytics */}
+
+        {/* Floating WhatsApp Button */}
+        <WhatsAppButton />
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-KXMXCECEZM"
           strategy="afterInteractive"

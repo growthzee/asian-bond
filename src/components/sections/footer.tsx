@@ -28,7 +28,7 @@ export function Footer() {
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               Your trusted partner for premium construction materials and
-              exceptional service since 2015.
+              exceptional service Kadambari Products Formed in 1985.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
