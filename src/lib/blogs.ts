@@ -24465,6 +24465,178 @@ export const blogs: Blog[] = [
     image:
       "https://res.cloudinary.com/dbtmhiwij/image/upload/v1772279359/Asian_Bond_Creative_03_z39e3b.png",
   },
+  {
+    id: "asianbond-how-isi-astm-bis-standards-affect-your-materials",
+    title: "AsianBond: How ISI, ASTM & BIS Standards Affect Your Materials",
+    author: "Asian Bond Team",
+    date: "24th February, 2026",
+    category: "Innovation",
+    summary:
+      "In construction and infrastructure development, material selection directly influences durability, compliance, and long-term performance. Certifications such as ISI, ASTM, and BIS are not merely labels — they indicate that a product has undergone structured testing and meets defined technical benchmarks.",
+    content: `
+<article class="prose max-w-none mx-auto">
+
+  <h1 class="text-3xl font-bold">
+    AsianBond: How ISI, ASTM & BIS Standards Affect Your Materials
+  </h1>
+
+  <p>
+    In construction and infrastructure development, material selection directly influences durability, compliance, and long-term performance. Certifications such as ISI, ASTM, and BIS are not merely labels — they indicate that a product has undergone structured testing and meets defined technical benchmarks.
+  </p>
+
+  <p>
+    For materials such as sealants, coatings, and concrete hardeners, verified compliance ensures predictable behavior under load, abrasion, and environmental exposure. Understanding what each certification represents enables contractors, engineers, and procurement teams to make informed, risk-aware decisions.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    ISI, ASTM & BIS – Quick Definitions
+  </h2>
+
+  <h3 class="text-xl font-semibold">
+    ISI Mark
+  </h3>
+  <p>
+    The ISI mark signifies compliance with Indian Standards (IS) formulated under the Bureau of Indian Standards (BIS). Products carrying the ISI symbol have been tested and certified to meet regulatory requirements specific to India.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    ASTM International
+  </h3>
+  <p>
+    ASTM International develops globally recognized technical standards covering material testing methods, performance benchmarks, and procedural specifications. Standards such as ASTM C779 (abrasion resistance) are widely referenced in engineering documentation across international projects.
+  </p>
+
+  <h3 class="text-xl font-semibold">
+    Bureau of Indian Standards (BIS)
+  </h3>
+  <p>
+    BIS is India’s national standards body responsible for developing IS codes and managing product certification schemes. It ensures products comply with safety, durability, and quality benchmarks applicable within Indian regulatory frameworks.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Why Standards Matter Beyond the Logo
+  </h2>
+
+  <p>
+    Certification impacts performance in three critical ways:
+  </p>
+
+  <ul>
+    <li><strong>Consistency:</strong> Repeated standardized testing ensures uniform product performance.</li>
+    <li><strong>Defined Performance Parameters:</strong> Clear limits on strength, chemical composition, penetration depth, and abrasion resistance.</li>
+    <li><strong>Legal & Contractual Protection:</strong> Many tenders require certified materials to minimize liability and compliance risk.</li>
+  </ul>
+
+  <p>
+    For example, selecting a high-performance concrete hardener in India should involve reviewing penetration depth, compressive strength enhancement, abrasion resistance, and chemical stability — not marketing claims alone.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Key Differences Between ISI, ASTM & BIS
+  </h2>
+
+  <ul>
+    <li><strong>Geographic Scope:</strong> BIS/ISI apply within India; ASTM standards are globally referenced.</li>
+    <li><strong>Testing Framework:</strong> ASTM provides highly detailed testing procedures; BIS may adapt international practices to Indian conditions.</li>
+    <li><strong>Certification vs. Standard:</strong> A standard defines criteria; certification confirms compliance through third-party validation.</li>
+    <li><strong>Documentation:</strong> BIS certification is government-backed, while ASTM compliance is verified through accredited lab reports.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold">
+    Practical Example: Choosing a Concrete Hardener
+  </h2>
+
+  <p>
+    When comparing products:
+  </p>
+
+  <ul>
+    <li><strong>Product A:</strong> BIS-certified with ISI mark</li>
+    <li><strong>Product B:</strong> Backed by ASTM-accredited lab reports</li>
+    <li><strong>Product C:</strong> Claims testing without third-party documentation</li>
+  </ul>
+
+  <p>
+    The decision should be based on:
+  </p>
+
+  <ul>
+    <li>Relevance of the standard to abrasion, chloride resistance, or penetration depth</li>
+    <li>Accredited laboratory validation (e.g., NABL-approved labs)</li>
+    <li>Recent test dates (preferably within 12 months)</li>
+    <li>Traceable batch documentation</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold">
+    Technical Checklist for Evaluation
+  </h2>
+
+  <ul>
+    <li>Penetration depth verification</li>
+    <li>Abrasion resistance testing (e.g., ASTM D4060 or equivalent IS standard)</li>
+    <li>Hardness improvement pre- and post-treatment</li>
+    <li>Chloride or sulfate resistance testing</li>
+    <li>Chemical compatibility with coatings or curing agents</li>
+    <li>Accelerated aging or UV resistance data</li>
+    <li>VOC compliance and applicator safety standards</li>
+    <li>Batch traceability and quality control certification</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold">
+    Common Misunderstandings
+  </h2>
+
+  <ul>
+    <li>Certification does not eliminate the need for on-site sample testing.</li>
+    <li>ASTM is not automatically superior to BIS — suitability depends on project scope and regulatory requirements.</li>
+    <li>All ISI-marked products are not identical; each follows a specific IS code.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold">
+    How AsianBond Helps You Choose the Right Product
+  </h2>
+
+  <p>
+    At AsianBond, compliance is integrated into product development rather than treated as an afterthought. We assist contractors and procurement teams by:
+  </p>
+
+  <ul>
+    <li>Mapping project specifications to relevant IS/BIS or ASTM codes</li>
+    <li>Providing certified laboratory reports</li>
+    <li>Ensuring batch traceability documentation</li>
+    <li>Recommending products tested under real project conditions</li>
+  </ul>
+
+  <p>
+    Our approach ensures that concrete hardeners and construction solutions align with regulatory expectations and practical performance demands.
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Procurement Template (For Tenders)
+  </h2>
+
+  <p>
+    “Supply [product name] with evidence of conformity to BIS standard [IS xxxx] and independent laboratory test reports to ASTM standards [ASTM xxxx]. Reports must be from an NABL-accredited laboratory within the last 12 months. Manufacturer to provide batch traceability and a 12-month performance guarantee.”
+  </p>
+
+  <h2 class="text-2xl font-semibold">
+    Final Recommendation
+  </h2>
+
+  <p>
+    Durable materials require documented proof of performance. ISI/BIS certification ensures regulatory compliance within India, while ASTM validation provides additional technical assurance through globally recognized testing methods.
+  </p>
+
+  <p>
+    Combining both frameworks reduces procurement risk, improves lifecycle durability, and strengthens accountability. When project conditions such as load intensity, environmental exposure, and operational demands are clearly defined, AsianBond can provide a structured recommendation aligned with applicable standards.
+  </p>
+
+</article>
+
+  `,
+    image:
+      "https://res.cloudinary.com/dbtmhiwij/image/upload/v1772452661/Artboard_4_boh0po.png",
+  },
 ];
 
 export function getBlogById(id: string): Blog | undefined {
