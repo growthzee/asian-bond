@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import WhatsAppButton from "@/components/WhatsAppButton"; // Import here
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Best Concrete Hardener in India | Asian Bond Manufacturer",
   description:
-    "Buy ISO certified concrete hardener for paver blocks, bricks, and factory floors from Asian Bond — India’s trusted concrete hardener manufacturer.",
+    "Buy ISO certified concrete hardener for paver blocks, bricks, and factory floors from Asian Bond — India's trusted concrete hardener manufacturer.",
   verification: {
     google: "nhWlRM6-aNNXHth6wKPIdIXWMe68bLdoMLg10dawdRc",
   },
@@ -38,6 +38,10 @@ export default function RootLayout({
         {/* Floating WhatsApp Button */}
         <WhatsAppButton />
 
+        {/* ── Protection script — loads before page becomes interactive ── */}
+        <Script src="/protection.js" strategy="beforeInteractive" />
+
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-KXMXCECEZM"
           strategy="afterInteractive"
